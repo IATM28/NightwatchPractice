@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="ce_property_creation"
+    errors="0" failures="0" hostname="" id="" package="ce_property_creation" skipped="0"
+    tests="1" time="60.36" timestamp="Tue, 18 Oct 2016 21:44:10 GMT">
+  
+    <testcase name="Create a property via CE" time="60.36" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
