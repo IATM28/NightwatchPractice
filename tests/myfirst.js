@@ -1,45 +1,51 @@
 module.exports = {
   'Login on CE' : function (browser) {
-    browser
-      .url('https://cedev.channelauction.com')
-      .waitForElementVisible('body',1000)
+   // browser
+      browser.url('https://cedev.channelauction.com')
+      browser.waitForElementVisible('body',1000)
       //Start Session
-      .setValue('input[name="logonName"]', 'jose')
-      .setValue('input[name="password"]', 'jose')
-      .click('button[data-elm-id="btnLogin"]')
-      .waitForElementVisible('body',1000)
+      browser.setValue('input[name="logonName"]', 'jose')
+      browser.setValue('input[name="password"]', 'jose')
+      browser.click('button[data-elm-id="btnLogin"]')
+      browser.waitForElementVisible('body',1000)
 	  
       //Navigate from home to New Property File
-      .waitForElementVisible('a[data-elm-id="lnkCasAdministration"]',50000)
-      .click('a[data-elm-id="lnkCasAdministration"]')
-      .click('a[data-elm-id="lnkCasNewPropertyFile"]')
-      .waitForElementVisible('body',1000)
+      browser.waitForElementVisible('a[data-elm-id="lnkCasAdministration"]',100000)
+      browser.click('a[data-elm-id="lnkCasAdministration"]')
+      browser.click('a[data-elm-id="lnkCasNewPropertyFile"]')
+      browser.waitForElementVisible('body',1000)
       
 	  //Load and create new properties
-      .waitForElementVisible('select[id="client"]',80000)
-      
-	  //Transaction Characteristics section	  
-	  
+      browser.waitForElementVisible('select[id="client"]',100000)
       
 	  //Product type dropdown
-	  .click('select[id="productType"]')
-      .click('option[value="string:traditionalListing"]')
+	  browser.click('select[id="productType"]')
+      browser.click('option[value="string:traditionalListing"]')
       
 	  //Test Property dropdown
-	  .click('select[id="isTestProperty"]')
-	  .click('option[label="No"]')
+	  browser.click('select[id="isTestProperty"]')
+	  browser.click('option[label="No"]')
 	  
 	  //Address section
 	  //Line 1 textbox
-	  .setValue('input[id="line1"]','448 S 23rd St 1')	  
-	  .setValue('input[id="zipCode"]','94804')
-	  //.setValue('input[id="city"]','Richmond')
-	  .click('button[data-elm-id="btnCreate"]')
+	  browser.setValue('input[id="line1"]','448 S 23rd St 1')	  
+	  browser.setValue('input[id="zipCode"]','94804')
 	  
 	  //Seller name dropdown
-	  .click('select[id="client"]')
-      //.click('option[label="0000"]')
-	  .setValue('select[id="client"]','0000')
+	  browserclass="form-control ng-touched ng-dirty ng-valid-parse ng-invalid ng-invalid-required"
+	  browser.click('select[id="client"]')
+	  browser.pause(5000)
+	  //.waitForElementVisible()
+      //.click('option[value="string:583902a6-86dd-4847-a423-e1c492d3105d"]')
+	  //.pause(5000)
+	  browser.assert.containsText('select[id="client"]',"--")
+	  browser.pause(120000)
+	  browser.click('select[id="client"]')
+	  browser.keys(browser.Keys.DOWN_ARROW)
+	  browser.keys(['\uE006']) //hits the enter key.
+	  
+	  //.expect.element('select[id="client"]').to.have.attribute('value').wich.contains("string:583902a6-86dd-4847-a423-e1c492d3105d")
+	  .click('button[data-elm-id="btnCreate"]')
       //.end();
   }
 };
