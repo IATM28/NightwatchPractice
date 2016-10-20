@@ -1,0 +1,107 @@
+17:12:32.780 INFO - Launching a standalone Selenium Server
+17:12:32.859 INFO - Java: Oracle Corporation 25.101-b13
+17:12:32.859 INFO - OS: Windows 10 10.0 amd64
+17:12:32.870 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+17:12:32.923 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+17:12:32.924 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+17:12:32.931 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
+17:12:32.932 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+17:12:32.932 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+17:12:33.030 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+17:12:33.030 INFO - Selenium Server is up and running
+17:12:33.308 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Examplede, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+17:12:33.317 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Examplede, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf) on port 42904
+Only local connections are allowed.
+17:12:35.925 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Examplede, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+17:12:35.939 INFO - Executing: [get: https://deqa.channelauction.com/homes/])
+17:13:11.097 INFO - Done: [get: https://deqa.channelauction.com/homes/]
+17:13:11.108 INFO - Executing: [find elements: By.cssSelector: body])
+17:13:11.144 INFO - Done: [find elements: By.cssSelector: body]
+17:13:11.150 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
+17:13:11.168 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
+17:13:11.168 INFO - Executing: [find element: By.cssSelector: #main-navbar li a.btn.btn-nav-outline])
+17:13:11.184 INFO - Done: [find element: By.cssSelector: #main-navbar li a.btn.btn-nav-outline]
+17:13:11.199 INFO - Executing: [click: 1 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: #main-navbar li a.btn.btn-nav-outline]])
+17:13:11.656 INFO - Done: [click: 1 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: #main-navbar li a.btn.btn-nav-outline]]
+17:13:11.662 INFO - Executing: [take screenshot])
+17:13:13.103 INFO - Done: [take screenshot]
+17:13:13.134 INFO - Executing: [find element: By.cssSelector: body])
+17:13:13.156 INFO - Done: [find element: By.cssSelector: body]
+17:13:13.156 INFO - Executing: [get text: 0 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
+17:13:13.203 INFO - Done: [get text: 0 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
+17:13:13.218 INFO - Executing: [find element: By.cssSelector: input[id="userEmail"]])
+17:13:13.234 INFO - Done: [find element: By.cssSelector: input[id="userEmail"]]
+17:13:13.234 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[id="userEmail"]], [e, l, o, p, e, z, @, m, a, h, i, s, o, f, t, ., c, o, m]])
+17:13:13.348 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[id="userEmail"]], [e, l, o, p, e, z, @, m, a, h, i, s, o, f, t, ., c, o, m]]
+17:13:13.354 INFO - Executing: [find element: By.cssSelector: input[id="userPassword"]])
+17:13:13.399 INFO - Done: [find element: By.cssSelector: input[id="userPassword"]]
+17:13:13.406 INFO - Executing: [send keys: 3 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[id="userPassword"]], [1, 2, 3, 4, 5, 6]])
+17:13:13.495 INFO - Done: [send keys: 3 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[id="userPassword"]], [1, 2, 3, 4, 5, 6]]
+17:13:13.500 INFO - Executing: [take screenshot])
+17:13:14.296 INFO - Done: [take screenshot]
+17:13:14.374 INFO - Executing: [find element: By.cssSelector: button[data-elm-id="btnLogin"]])
+17:13:14.441 INFO - Done: [find element: By.cssSelector: button[data-elm-id="btnLogin"]]
+17:13:14.447 INFO - Executing: [click: 4 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: button[data-elm-id="btnLogin"]]])
+17:13:14.576 INFO - Done: [click: 4 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: button[data-elm-id="btnLogin"]]]
+17:13:14.606 INFO - Executing: [find elements: By.cssSelector: .mb-lg:nth-of-type(1)])
+17:13:14.700 INFO - Done: [find elements: By.cssSelector: .mb-lg:nth-of-type(1)]
+17:13:14.715 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: .mb-lg:nth-of-type(1)]])
+17:13:14.850 INFO - Done: [is displayed: 5 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: .mb-lg:nth-of-type(1)]]
+17:13:17.861 INFO - Executing: [take screenshot])
+17:13:26.224 INFO - Done: [take screenshot]
+17:13:26.270 INFO - Executing: [find element: By.cssSelector: .mb-lg])
+17:13:26.316 INFO - Done: [find element: By.cssSelector: .mb-lg]
+17:13:26.320 INFO - Executing: [get text: 6 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: .mb-lg]])
+17:13:26.362 INFO - Done: [get text: 6 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: .mb-lg]]
+17:13:26.385 INFO - Executing: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) a.dropdown-title])
+17:13:26.418 INFO - Done: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) a.dropdown-title]
+17:13:26.418 INFO - Executing: [click: 7 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) a.dropdown-title]])
+17:13:26.531 INFO - Done: [click: 7 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) a.dropdown-title]]
+17:13:26.541 INFO - Executing: [find elements: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu])
+17:13:26.577 INFO - Done: [find elements: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu]
+17:13:26.577 INFO - Executing: [is displayed: 8 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu]])
+17:13:26.609 INFO - Done: [is displayed: 8 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu]]
+17:13:26.624 INFO - Executing: [take screenshot])
+17:13:27.341 INFO - Done: [take screenshot]
+17:13:27.409 INFO - Executing: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a])
+17:13:27.463 INFO - Done: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]
+17:13:27.463 INFO - Executing: [get text: 9 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]])
+17:13:27.510 INFO - Done: [get text: 9 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]]
+17:13:27.510 INFO - Executing: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a])
+17:13:27.525 INFO - Done: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]
+17:13:27.541 INFO - Executing: [click: 9 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]])
+17:13:28.095 INFO - Done: [click: 9 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]]
+17:13:28.108 INFO - Executing: [take screenshot])
+17:13:28.810 INFO - Done: [take screenshot]
+17:13:28.898 INFO - Executing: [find elements: By.cssSelector: body])
+17:13:28.933 INFO - Done: [find elements: By.cssSelector: body]
+17:13:28.949 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
+17:13:28.980 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
+17:13:28.988 INFO - Executing: [find element: By.cssSelector: body])
+17:13:29.033 INFO - Done: [find element: By.cssSelector: body]
+17:13:29.039 INFO - Executing: [get text: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
+17:13:29.198 INFO - Done: [get text: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
+17:13:29.207 INFO - Executing: [take screenshot])
+17:13:30.236 INFO - Done: [take screenshot]
+17:13:30.360 INFO - Executing: [find element: By.cssSelector: input[name="address"]])
+17:13:30.410 INFO - Done: [find element: By.cssSelector: input[name="address"]]
+17:13:30.422 INFO - Executing: [send keys: 11 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[name="address"]], [9, 2, 4, 6,  , W,  , L, o, n, e,  , C, a, c, t, u, s,  , D, r, ,,  , P, e, o, r, i, a, ,,  , A, Z,  , 8, 5, 3, 8, 2]])
+17:13:30.847 INFO - Done: [send keys: 11 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[name="address"]], [9, 2, 4, 6,  , W,  , L, o, n, e,  , C, a, c, t, u, s,  , D, r, ,,  , P, e, o, r, i, a, ,,  , A, Z,  , 8, 5, 3, 8, 2]]
+17:13:32.852 INFO - Executing: [take screenshot])
+17:13:33.523 INFO - Done: [take screenshot]
+17:13:33.807 INFO - Executing: [find element: By.cssSelector: button[btn-whirl="btn-whirl"]])
+17:13:33.854 INFO - Done: [find element: By.cssSelector: button[btn-whirl="btn-whirl"]]
+17:13:33.854 INFO - Executing: [click: 12 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: button[btn-whirl="btn-whirl"]]])
+17:13:33.969 INFO - Done: [click: 12 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: button[btn-whirl="btn-whirl"]]]
+17:13:33.980 INFO - Executing: [find elements: By.cssSelector: body])
+17:13:34.016 INFO - Done: [find elements: By.cssSelector: body]
+17:13:34.025 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
+17:13:34.094 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
+17:13:34.109 INFO - Executing: [find element: By.cssSelector: body])
+17:13:34.160 INFO - Done: [find element: By.cssSelector: body]
+17:13:34.169 INFO - Executing: [get text: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
+17:13:34.283 INFO - Done: [get text: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
+17:13:34.297 INFO - Executing: [delete session: 8094c258-c5c3-4add-9dbc-b6574a548744])
+17:13:35.673 INFO - Done: [delete session: 8094c258-c5c3-4add-9dbc-b6574a548744]

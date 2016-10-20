@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="examplede"
+    errors="1" failures="0" hostname="" id="" package="examplede" skipped="0"
+    tests="1" time="0.008000" timestamp="Mon, 17 Oct 2016 21:54:54 GMT">
+  
+    <testcase name="Login" time="0.008000" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Examplede / Login]:
+
+  TypeError: Cannot read property &#39;containsText&#39; of undefined
+    at Object.module.exports.Login (C:\Users\Elmi\examplede\tests\examplede.js:23:14)
+    at Module.call (C:\Users\Elmi\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Elmi\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Elmi\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Elmi\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Elmi\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Elmi\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Elmi\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Elmi\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at nextTickCallbackWith0Args (node.js:420:9)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

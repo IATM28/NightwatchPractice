@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="3">
+
+  <testsuite name="examplede"
+    errors="0" failures="1" hostname="" id="" package="examplede" skipped="0"
+    tests="3" time="62.54" timestamp="Tue, 18 Oct 2016 21:12:33 GMT">
+  
+    <testcase name="Step 1: Login" time="53.24" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 2: Select option &quot;Sell a home&quot;" time="3.954" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 3: Fill List information" time="5.341" assertions="2">
+
+      <failure message="Testing if element &lt;body&gt; contains text: &quot;Address&quot;.">    at Object.module.exports.Step 3: Fill List information (C:\Users\elopez\examplede\tests\examplede.js:48:13)</failure>
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
