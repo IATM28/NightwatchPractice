@@ -29,7 +29,7 @@ module.exports = {
 	  browser.url('https://dedev.channelauction.com/homes/list-a-home/search')
 	  browser.waitForElementPresent('input[name="address"]',10000)
 	  browser.waitForElementPresent('button[class="btn btn-primary locate-property-btn"]',10000)
-	  browser.setValue('input[name="address"]','4814 Retriever Cir, Anchorage, AK 99502')
+	  browser.setValue('input[name="address"]','4824 Retriever Cir, Anchorage, AK 99502')
 	  browser.click('button[class="btn btn-primary locate-property-btn"]')
 	  browser.pause(25000)
 	  browser.keys(['\uE006'])
@@ -94,22 +94,49 @@ module.exports = {
 	  browser.keys(browser.Keys.DOWN_ARROW)
 	  browser.keys(browser.Keys.DOWN_ARROW)
 	  browser.keys(['\uE006'])
-	  browser.pause(5000)
 	  browser.click('button[data-elm-id="btnSave"]')
 	  //Finish step 3
+	  //Start step 4
+	  browser.waitForElementPresent('p[class="mb-xl"]',10000)
+	  browser.waitForElementPresent('select[data-elm-id="storiesNum"]',10000)
+	  browser.waitForElementPresent('button[data-elm-id="btnSave"]',10000)
+	  browser.assert.containsText('p[class="mb-xl"]',"Here's your chance to make your listing stand out. That fireplace may be unnecessary to you but just what another family is looking for. We've included some basic amenities below, but you can also select other to customize your own.")
+	  browser.click('button[data-elm-id="btnSave"]')
+	  //Finish step 4 
+	  //Start step 5
+	  browser.waitForElementPresent('h2[class="mb20"]',10000)
+	  browser.waitForElementPresent('h3[class="inline"]',10000)
+	  browser.waitForElementPresent('button[data-elm-id="btnSave"]',10000)
+	  browser.assert.containsText('h2[class="mb20"]',"Description")
+	  browser.assert.containsText('h3[class="inline"]',"5 reasons buyers will")
+	  browser.assert.elementPresent('i[class="fa fa-heart heart"]')
+	  browser.click('button[data-elm-id="btnSave"]')
+	  //Finish step 5
+	  //Start step 6
+	  browser.pause(5000)
+	  browser.waitForElementPresent('h2[class="mb20"]',10000)
+	  browser.assert.containsText('h2[class="mb20"]',"Listing Terms")
+	  browser.waitForElementPresent('div[class="tooltip-icon inline"]',10000)
+	  browser.waitForElementPresent('input[data-elm-id="listPrice"]',10000)
+	  browser.waitForElementPresent('p[class="text-justify"]',10000)
+	  browser.assert.containsText('p[class="text-justify"]',"Please enter the amount that you or your client would like to get for the home. You can use the Estimated Value from our Valuation Tool as guidance. You can also check out our 5 pricing strategies, as well as the importance of using psychology before listing. Still unsure? Contact our Ten-X Homes Team at (866) 910-8369 or email CustomerSuccess@Ten-X.com")
+	  browser.waitForElementPresent('button[data-elm-id="btnSave"]',10000)
+	  browser.setValue('[data-elm-id="listPrice"]','100000')
+	  browser.click('button[data-elm-id="btnSave"]')
+	  //Finish step 6
+	  //Start step 7
+	  browser.pause(5000)
+	  browser.waitForElementPresent('h1[class="mb"]',10000)
+	  browser.waitForElementPresent('button[data-elm-id="btnUploadPhotosTop"]',10000)
+	  browser.waitForElementPresent('span[class="text"]',10000)
+	  browser.waitForElementNotPresent('button[data-element-id="btnSaveAndPreview"]',10000)
+	  browser.click('span[class="btn-text"]')
+	  
+	  
+	  
+	  //Finish step 7
+	  
 	  browser.pause(50000)
-	  
-	  
-	  //
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
 	  
 	  
 	  }
