@@ -29,7 +29,7 @@ module.exports = {
 	  browser.url('https://dedev.channelauction.com/homes/list-a-home/search')
 	  browser.waitForElementPresent('input[name="address"]',10000)
 	  browser.waitForElementPresent('button[class="btn btn-primary locate-property-btn"]',10000)
-	  browser.setValue('input[name="address"]','4824 Retriever Cir, Anchorage, AK 99502')
+	  browser.setValue('input[name="address"]','4825 Retriever Cir, Anchorage, AK 99502')
 	  browser.click('button[class="btn btn-primary locate-property-btn"]')
 	  browser.pause(25000)
 	  browser.keys(['\uE006'])
@@ -131,7 +131,7 @@ module.exports = {
 	  browser.waitForElementPresent('span[class="text"]',10000)
 	  browser.waitForElementNotPresent('button[data-element-id="btnSaveAndPreview"]',10000)
 	  browser.click('span[class="btn-text"]')
-	  
+	  browser.keys(['\uE006'])
 	  
 	  
 	  //Finish step 7
