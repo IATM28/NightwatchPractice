@@ -2,7 +2,7 @@ var variables = {
     user: "elopez@mahisoft.com",
     password: "123456",
     dir: '9224 W Lone Cactus Dr, Peoria, AZ 85382',
-    zip: '80031',
+    zipcodes: ['90002', '92602', '92618', '92620', '92672', '92688', '92037', '93636', '94107', '95628', '94536'],
     path: './tests_output/screenshots/',
     ext: '.png',
     sqft: '2000',
@@ -33,6 +33,6 @@ var reporter = new HtmlReporter({
 });*/
 
 module.exports = {
-   // reporter: reporter.fn,
+    // reporter: reporter.fn,
     variables: variables
 }
