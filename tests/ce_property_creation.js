@@ -38,9 +38,10 @@ module.exports = {
 	  		browser.setValue('select[ng-model="model.transactionCharacteristics.productType"]', 'Traditional Listing')
 	  		browser.setValue('input[ng-model="model.propertyAddress.line1"]', line1)
 	  		browser.setValue('input[ng-model="model.propertyAddress.zipCode" ]', zipCode)
+	  		browser.pause(30000)
 	  		browser.waitForElementVisible('div[class="col-xs-12"]', 30000)
 	  		browser.click('button[data-elm-id="btnCreate"]') 
-	  		browser.waitForElementVisible('div[class="panel-heading clearfix pb0"]', 50000).assert.containsText('div[class="panel-heading clearfix pb0"]', line1 + ', Phoenix, AZ ' + zipCode)
+	  		browser.waitForElementVisible('div[class="panel-heading clearfix pb0"]', 50000).assert.containsText('div[class="panel-heading clearfix pb0"]', line1 + ", Phoenix, AZ " + zipCode)
        })
 	}
 };
