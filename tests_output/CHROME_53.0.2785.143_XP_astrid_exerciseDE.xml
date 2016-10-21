@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="astrid_exerciseDE"
+    errors="0" failures="0" hostname="" id="" package="astrid_exerciseDE" skipped="0"
+    tests="4" time="67.87" timestamp="Fri, 21 Oct 2016 19:16:09 GMT">
+  
+    <testcase name="Step 1: Login DE and verify redirection" time="33.63" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 2: Browse to List a Home and search address" time="7.377" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 3: Go through the SJ steps" time="14.30" assertions="13">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 4: Preview property and Marketing Agreement" time="12.56" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

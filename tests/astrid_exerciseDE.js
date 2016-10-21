@@ -1,5 +1,5 @@
 module.exports = {
-  'step one' : function (browser) {
+  'Step 1: Login DE and verify redirection' : function (browser) {
     browser
       .url('https://deqa.channelauction.com/homes/')
       .waitForElementVisible('body', 1000)
@@ -11,20 +11,29 @@ module.exports = {
       .click('button[data-elm-id="btnLogin"]')
       .pause(2000)
       .assert.urlEquals('https://deqa.channelauction.com/homes/dashboard/activity')
+  },
       
- //    TODO: Use the navbar to get to List a Home
- 
-      .url('https://deqa.channelauction.com/homes/list-a-home/search')
-      .waitForElementVisible('body', 1000)
-      .setValue('input[name="address"]', '8942 E Arizona Park Pl Scottsdale, AZ 85260')
+ 'Step 2: Browse to List a Home and search address' : function (browser){
+     browser
+      .useXpath()
+      .click('//*[@id="main-navbar"]/nav[2]/div/ul[2]/li[2]/a')
+      .waitForElementVisible('//*[@id="main-navbar"]/nav[2]/div/ul[2]/li[2]/ul/li[1]/a', 2000)
+      .click('//*[@id="main-navbar"]/nav[2]/div/ul[2]/li[2]/ul/li[1]/a')
+      .useCss()
+      .waitForElementVisible('input[name="address"]', 2000)
+      //The following address has to be changed everytime the test is going to run
+      .setValue('input[name="address"]', '10170 E Cortez Dr Scottsdale, AZ 85260')
       .pause(5000)
       
-     /* TODO: Use option in the RealtyTrack dropdown
-      * .click('a[title="8907 E Palm Ridge Dr Scottsdale, AZ 85260"]')*/
+// TODO: Use option in the RealtyTrack dropdown
      
       .click('button[class="btn btn-primary locate-property-btn"]')
       .waitForElementVisible('button[class="btn btn-primary col-sm-6 col-sm-offset-3"]', 2000)
       .click('button[class="btn btn-primary col-sm-6 col-sm-offset-3"]')
+ },
+ 
+ 'Step 3: Go through the SJ steps' : function (browser){
+     browser
       .waitForElementVisible('div.hero-card-white a', 2000)
       .click('div.hero-card-white a')
       .waitForElementVisible('button[data-elm-id="btnAgent"]', 2000)
@@ -56,12 +65,19 @@ module.exports = {
       .click('div.action-icon.primary')
       .waitForElementVisible('button[data-elm-id="btnSaveAndPreview"]', 2000)
       .click('button[data-elm-id="btnSaveAndPreview"]')
-      .pause(5000)
+      .pause(5000);
+ },
+ 
+ 'Step 4: Preview property and Marketing Agreement' : function (browser){
+     browser
       .waitForElementNotPresent('div.toast.toast-success', 20000)
       .waitForElementVisible('button[data-elm-id="btnActivateListingXs"]', 2000)
       .click('button[data-elm-id="btnActivateListingXs"]')
-      .pause(2000)
+      .pause(3000)
       .waitForElementVisible('button[data-elm-id="btnAgreeContinue"]', 2000)
       .click('button[data-elm-id="btnAgreeContinue"]')
+      .pause(3000)
+      .assert.urlEquals('https://deqa.channelauction.com/homes/dashboard/activity')
+      .end();
   }
 };

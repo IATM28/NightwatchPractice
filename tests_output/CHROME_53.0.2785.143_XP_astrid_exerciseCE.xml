@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="3">
+
+  <testsuite name="astrid_exerciseCE"
+    errors="0" failures="0" hostname="" id="" package="astrid_exerciseCE" skipped="0"
+    tests="3" time="27.90" timestamp="Fri, 21 Oct 2016 19:19:14 GMT">
+  
+    <testcase name="Step 1: CE Login" time="8.912" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Step 2: Browse to new property file" time="9.413" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 3: Basic info and create property" time="9.579" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
