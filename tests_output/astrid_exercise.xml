@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="astrid_exercise"
+    errors="1" failures="0" hostname="" id="" package="astrid_exercise" skipped="0"
+    tests="1" time="0.008000" timestamp="Wed, 19 Oct 2016 15:51:53 GMT">
+  
+    <testcase name="property publish" time="0.008000" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Astrid Exercise / property publish]:
+
+  TypeError: browser.url(...).waitForElementVisible(...).click(...).waitForElementVisible(...).verify is not a function
+    at Object.module.exports.property publish (C:\Users\Astrid\Documents\NightwatchPractice\tests\astrid_exercise.js:8:8)
+    at Module.call (C:\Users\Astrid\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Astrid\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Astrid\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Astrid\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Astrid\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Astrid\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Astrid\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Astrid\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at nextTickCallbackWith0Args (node.js:420:9)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,67 @@
+module.exports = {
+  'step one' : function (browser) {
+    browser
+      .url('https://deqa.channelauction.com/homes/')
+      .waitForElementVisible('body', 1000)
+      .click('#main-navbar nav div ul.nav.navbar-nav.navbar-right li a.btn.btn-nav-outline')
+      .waitForElementVisible('body', 1000)
+      .waitForElementVisible('input[name="userEmail"]', 1000)
+      .setValue('input[name="userEmail"]', 'astridsellersagent@mahisoft.com')
+      .setValue('input[data-elm-id="userPassword"]', '123456')
+      .click('button[data-elm-id="btnLogin"]')
+      .pause(2000)
+      .assert.urlEquals('https://deqa.channelauction.com/homes/dashboard/activity')
+      
+ //    TODO: Use the navbar to get to List a Home
+ 
+      .url('https://deqa.channelauction.com/homes/list-a-home/search')
+      .waitForElementVisible('body', 1000)
+      .setValue('input[name="address"]', '8942 E Arizona Park Pl Scottsdale, AZ 85260')
+      .pause(5000)
+      
+     /* TODO: Use option in the RealtyTrack dropdown
+      * .click('a[title="8907 E Palm Ridge Dr Scottsdale, AZ 85260"]')*/
+     
+      .click('button[class="btn btn-primary locate-property-btn"]')
+      .waitForElementVisible('button[class="btn btn-primary col-sm-6 col-sm-offset-3"]', 2000)
+      .click('button[class="btn btn-primary col-sm-6 col-sm-offset-3"]')
+      .waitForElementVisible('div.hero-card-white a', 2000)
+      .click('div.hero-card-white a')
+      .waitForElementVisible('button[data-elm-id="btnAgent"]', 2000)
+      .click('button[data-elm-id="btnAgent"]')
+      .setValue('input[data-elm-id="ownerEmail"]', 'astridseller@mahisoft.com')
+      .click('button[data-elm-id="btnSave"]')
+      .waitForElementVisible('select[data-elm-id="propertyType"]', 2000)
+      .waitForElementVisible('select[data-elm-id="beds"]', 2000)
+      .waitForElementVisible('select[data-elm-id="completeBathrooms"]', 2000)
+      .setValue('select[data-elm-id="propertyType"]', 'string:Single Family-Attached')
+      .setValue('select[data-elm-id="beds"]', '2')
+      .setValue('select[data-elm-id="completeBathrooms"]', '2')
+      .click('button[data-elm-id="btnSave"]')
+      .waitForElementVisible('span.fa-stack.pull-right', 2000)
+      .click('button[data-elm-id="btnSave"]') 
+      .waitForElementVisible('h3.inline', 2000)
+      .click('button[data-elm-id="btnSave"]')
+      .waitForElementVisible('input[data-elm-id="listPrice"]', 2000)
+      .setValue('input[data-elm-id="listPrice"]', '400000')
+      .click('button[data-elm-id="btnSave"]')
+      .waitForElementVisible('button[data-elm-id="btnUploadPhotosTop"]', 2000)
+      .setValue('input[type="file"]', require('path').resolve('C:/Users/Astrid/Documents/NightWatchPractice/tests/House.jpg'))
+      .waitForElementVisible('button[data-elm-id="btnDeletePhotos"]', 2000)
+      .click('button[data-elm-id="btnAssignPhotos"]')
+      .waitForElementVisible('div.img-content', 2000)
+      .click('div.img-content')
+      .click('button[data-elm-id="btnTakeAction"]')
+      .waitForElementPresent('div.action-icon.primary', 2000)
+      .click('div.action-icon.primary')
+      .waitForElementVisible('button[data-elm-id="btnSaveAndPreview"]', 2000)
+      .click('button[data-elm-id="btnSaveAndPreview"]')
+      .pause(5000)
+      .waitForElementNotPresent('div.toast.toast-success', 20000)
+      .waitForElementVisible('button[data-elm-id="btnActivateListingXs"]', 2000)
+      .click('button[data-elm-id="btnActivateListingXs"]')
+      .pause(2000)
+      .waitForElementVisible('button[data-elm-id="btnAgreeContinue"]', 2000)
+      .click('button[data-elm-id="btnAgreeContinue"]')
+  }
+};
