@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="10">
+
+  <testsuite name="examplede"
+    errors="0" failures="0" hostname="" id="" package="examplede" skipped="0"
+    tests="10" time="181.3" timestamp="Fri, 21 Oct 2016 13:21:53 GMT">
+  
+    <testcase name="Step 1: Login" time="77.56" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 2: Select option &quot;Sell a home&quot;" time="4.158" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 3: Fill List information" time="24.51" assertions="5">
+
+    
+
+    
+
+    
+<system-out>[[ATTACHMENT|C:\Users\elopez\examplede\tests_output\examplede\Step-3:-Fill-List-information_ERROR_Oct-21-2016-092339-GMT-0400-(Venezuela-Standard.png]]</system-out>
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 4: Fill Seller info" time="9.021" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 5: Fill Property info" time="13.61" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 6: Fill Amenities if they exist" time="5.259" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 7: Fill Property Descriptions" time="4.880" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 8: Fill Listing Terms" time="5.438" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 9: Add Photos" time="16.67" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 10: List Home" time="20.18" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
