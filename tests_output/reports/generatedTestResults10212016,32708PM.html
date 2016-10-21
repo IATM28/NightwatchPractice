@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nightwatch HTML Report - Default Theme</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <style type="text/css">body{
+  margin: 10px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+}
+
+h2{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+h3{
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.toggleSuccess, .toggleError{
+  margin-right: 10px;
+}
+
+.errmessages{
+  background-color: rgba(238, 64, 64, 0.43);
+  border: 1px solid rgba(235, 28, 28, 0.78);
+  padding: 5px;
+}
+
+.errmessages h2{
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.errmessages .errors{
+  display: none;
+}
+
+.suites {
+  margin: 0 0 0 30px;
+}
+
+.package {
+  margin: 15px 0;
+}
+.package > .name {
+  cursor: pointer;
+}
+
+.suite {
+  margin: 15px 0;
+}
+
+.suite > .name {
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+.testcases {
+}
+
+.status{
+  display: inline-block;
+}
+
+.testcase .name {
+  display: inline-block;
+}
+
+.success{
+  color: rgb(56, 142, 56);
+}
+.testcase img{
+  max-width: 80%;
+}
+.package.error > .name{
+  color: rgb(178, 43, 43);
+}
+.suite.error > .name{
+  color: rgb(178, 43, 43);
+}
+
+.testcase.success .name{
+  color: rgb(56, 142, 56);
+}
+.testcase.error .status{
+  color: rgb(178, 43, 43);
+}
+    </style>
+    <script type="text/javascript">$(document).ready(function() {
+  $('.package>.name').click(function() {
+    $(this).siblings('.suites').slideToggle();
+  });
+
+  $('.suites, .errmessages, .testcases').hide();
+
+  $('.suite, .errmessages').click(function() {
+    var $elem = $(this);
+    $elem.children('.testcases, .errors').slideToggle();
+  });
+  $('.toggleSuccess').click(function() {
+    $('.package.success').slideToggle();
+  });
+  $('.toggleError').click(function() {
+    $('.package.error').slideToggle();
+  });
+});
+
+    </script>
+  </head>
+  <body>
+    <h1>Nightwatch Results</h1>
+    <div id="container"><a href="#" class="toggleSuccess">Show/Hide Successes</a>
+      <div class="package error">
+        <h2 class="name">&#10005; exampledev2</h2>
+        <div class="suites">
+          <div class="suite success">
+            <h3 class="name">Step 1: Select List a Home</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;body&gt; was visible after 69 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;body&gt; was visible after 45 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;.browse-info-box h1&gt; contains text: &quot;List a Home&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.modal-header h1&gt; was visible after 1110 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.main-header&gt; was visible after 5339 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;.main-header&gt; contains text: &quot;Completed&quot;.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Step 2: Login</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;label[for=&quot;userEmail&quot;]&gt; was visible after 43 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;body&gt; contains text: &quot;Log In&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.intro-section&gt; was visible after 8454 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;.intro-section&gt; contains text: &quot;Seller Info&quot;.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Step 3: Fill Seller info</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.form-section .section-title&gt; was visible after 61 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.property-info&gt; was visible after 219 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;.property-info&gt; contains text: &quot;Property Info&quot;.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Step 4: Fill Property info</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.property-info&gt; was visible after 32 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;select[name=&quot;propertyType&quot;]&gt; contains text: &quot;Townhouse&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;select[id=&quot;beds&quot;]&gt; contains text: &quot;3&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;select[id=&quot;completeBathrooms&quot;]&gt; contains text: &quot;2&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;select[id=&quot;splitBathrooms&quot;]&gt; contains text: &quot;0&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.amenities&gt; was visible after 1812 milliseconds.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Step 5: Fill Amenities if they exist</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;.amenities&gt; contains text: &quot;Amenities&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.property-description&gt; was visible after 1641 milliseconds.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Step 6: Fill Property Descriptions</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;.property-description&gt; contains text: &quot;Description&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.listing-terms-page&gt; was visible after 1668 milliseconds.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite success">
+            <h3 class="name">Step 7: Fill Listing Terms</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;.listing-terms-page&gt; contains text: &quot;Listing Terms&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.intro-section&gt; was visible after 1736 milliseconds.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="suite error">
+            <h3 class="name">Step 8: Add Photos</h3>
+            <ul class="testcases">
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Testing if element &lt;.intro-section&gt; contains text: &quot;Photos&quot;.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.modal-content&gt; was visible after 1095 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;div.sn-content.img-content&gt; was visible after 130 milliseconds.</div>
+              </li>
+              <li class="testcase success">
+                <div class="status">&#10003;</div>
+                <div class="name">Element &lt;.mb-sm&gt; was visible after 104 milliseconds.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
