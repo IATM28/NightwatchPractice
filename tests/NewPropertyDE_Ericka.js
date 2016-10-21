@@ -46,7 +46,7 @@ module.exports = {
       .click('button[data-elm-id="btnSave"]')
       .waitForElementVisible('input[data-elm-id="listPrice"]', 3000)
       .setValue('input[data-elm-id="listPrice"]', '280000')
-	  .click('button[data-elm-id="btnSave"]')
+	.click('button[data-elm-id="btnSave"]')
       .waitForElementVisible('button[data-elm-id="btnUploadPhotosTop"]', 2000)
       //IMPORTANT: This photo is in a local file, you need to change it if you aren't in C:/Testing/NightwatchPractice/tests/
       .setValue('input[type="file"]', require('path').resolve('C:/Testing/NightwatchPractice/tests/HouseForSale.jpg'))
@@ -64,7 +64,7 @@ module.exports = {
  },
  
      'Preview & Marketing' : function (browser){
-     browser
+      browser
 
       .waitForElementNotPresent('div.toast.toast-success', 30000)
       .waitForElementVisible('button[data-elm-id="btnActivateListingXs"]', 3000)
@@ -74,8 +74,6 @@ module.exports = {
       .click('button[data-elm-id="btnAgreeContinue"]')
       .pause(3000)
       .assert.urlEquals('https://deqa.channelauction.com/homes/dashboard/activity')
-
-
     .end();
 
       }

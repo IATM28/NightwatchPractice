@@ -11,7 +11,7 @@ module.exports = {
       .assert.urlEquals('https://cedev.channelauction.com/#/app/cas/dashboard')
       .url('https://cedev.channelauction.com/#/app/cas/property-file/new')
       .pause(3000)
-	.waitForElementVisible('select[data-elm-id="productType"]', 7000)
+	  .waitForElementVisible('select[data-elm-id="productType"]', 7000)
       .click('select.form-control option[value="string:traditionalListing"]')
       .waitForElementVisible('option[value="string:976a9c91-4a1b-4edd-b259-224129bde27e"]', 7000)
       .click('select.form-control option[value="string:976a9c91-4a1b-4edd-b259-224129bde27e"]')
@@ -55,7 +55,6 @@ module.exports = {
       .waitForElementVisible('button[data-elm-id="btnCreate"]', 7000)
       .pause(5000)
       .click('button[data-elm-id="btnCreate"]')
-    
     .end();
 
 	}
