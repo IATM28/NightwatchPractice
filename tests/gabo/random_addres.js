@@ -10,6 +10,7 @@ module.exports = {
 	var zipCode
 	var address
 	var finalZipCode*/
+  var defer = q.defer();
     browser
     //getting text from page with random adrresses
       .url('https://www.randomlists.com/random-addresses')
@@ -29,6 +30,7 @@ module.exports = {
       	console.log ('zip: ', zipCode)
       	finalZipCode = zipCode[2]
       	console.log ('final zip: ', finalZipCode)
+        defer.resolve(final, finalZipCode)
       	//return finalZipCode
       	
       })
@@ -46,10 +48,12 @@ module.exports = {
       	console.log ('final zip: ', finalZipCode)*/
       }, 9000);	
       console.log ('final zip: ', finalZipCode)
-      }
+      return defer.promise;
+    }
   
   }
 
+generatE_blabala().then(function(final, finalZipCode))
 
       
 

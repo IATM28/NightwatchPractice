@@ -1,5 +1,5 @@
   module.exports = {
-  
+  /*
 //module.exports = {
   'generate random address' : function (browser) {
   var rawAddress 
@@ -40,10 +40,10 @@
         zipCode = rawZipCode[1].split(" ")
         console.log ('zip: ', zipCode)
         finalZipCode = zipCode[2]
-        console.log ('final zip: ', finalZipCode)*/
+        console.log ('final zip: ', finalZipCode)
       }, 9000); 
       console.log ('final zip: ', finalZipCode)
-      },
+      },*/
   
 
 
@@ -89,11 +89,16 @@
   },
   'fill address' : function (browser){
     browser
-      .setValue('input[data-elm-id="line1"]', address)
-      .setValue('input[data-elm-id="zipCode"]', finalZipCode)    
+      .setValue('input[data-elm-id="line1"]', '123 Test st')
+      .pause(1000)
+      .assert.containsText('input[data-elm-id="line1"]','123 Test st')
+      .setValue('input[data-elm-id="zipCode"]', '80007')
+      .pause(1000)
+      .assert.containsText('input[data-elm-id="zipCode"]','80007')
   },
   'create and check' : function (browser){
     browser
+      .pause(10000)
       .click('button[data-elm-id="btnCreate"]')
         
   }
