@@ -1,6 +1,7 @@
  module.exports = {
 'clicking login de' : function (browser) {
     browser
+      .maximizeWindow()
       .url('https://dedev.channelauction.com/homes')
       .waitForElementVisible('body', 100000)
       .useXpath()
@@ -37,12 +38,12 @@
       .useCss()
       //filling address
       .waitForElementVisible('input[name="address"', 500000)
-      .setValue('input[name="address"', '94 S Lamar St Lakewood CO 80226')
-      .pause(1000)
+      .setValue('input[name="address"', '71 S Lamar St Lakewood CO 80226')
+      .pause(5000)
       .waitForElementVisible('button[ng-click="locatePropCtrl.createProperty()"]', 500000)
       .click('a[class="ng-binding ng-scope"]')
       .keys('\uE006')
-      .pause(2000)
+      .pause(5000)
       .click('button[ng-click="locatePropCtrl.createProperty()"]')
       .pause(2000)
       .verify.containsText('div[class="modal-header"]', 'Address Verification')
@@ -72,7 +73,7 @@
       .click('button[data-elm-id="btnSave"]')
   },
 
-    'sj_property_info' : function (browser){
+  'sj_property_info' : function (browser){
     browser
       .waitForElementVisible('body', 500000)
       //select property type
@@ -94,15 +95,19 @@
       //.pause(1000)
       //.waitForElementVisible('#completeBathrooms[option:nth-child(4)]', 500000)
       //.click('option[label="3"]')
+      .clearValue('select[data-elm-id="completeBathrooms"]')
       .setValue('select[data-elm-id="completeBathrooms"]', '2')
       .pause(1000)
       //set square footage
+      .clearValue('input[id="squareFootage"]')
       .waitForElementVisible('input[id="squareFootage"]', 500000)
       .setValue('input[id="squareFootage"]', '3000')
       //set lot size
+      .clearValue('input[id="lotSizeSqft"]')
       .waitForElementVisible('input[id="lotSizeSqft"]', 500000)
       .setValue('input[id="lotSizeSqft"]', '5000')
       //set year built
+      .clearValue('input[id="yearBuilt"]')
       .waitForElementVisible('input[id="yearBuilt"]', 500000)
       .setValue('input[id="yearBuilt"]', '2000')  
       .click('button[data-elm-id="btnSave"]')
@@ -149,17 +154,22 @@
   },
   'sj_photos' : function (browser){
     browser
-      .waitForElementVisible('body', 500000)
-      //filling listing price
-      .waitForElementVisible('data-elm-id="btnUploadPhotosTop"', 500000)
-      .setValue('input[type="file"]', require('path').resolve('//NightWatchPractice/tests/gabo/gabo_test_house.jpg'))
-      .pause(1000)
-      .click('data-elm-id="btnAssignPhotos"')
-      .pause(1000)
+      .waitForElementVisible('body', 50000)
+      .waitForElementVisible('div[class="drop-border"', 50000)
+      //upload photo
+      //.useXpath()
+      //.waitForElementVisible('//*[@id="upload"]', 5000)
+      .setValue('input[type="file"]', require('path').resolve('././gabo_test_house.jpg'))
+      //.useCss()
+      //.setValue('input#upload', __dirname + 'gabo_test_house.jpg')
+      .waitForElementVisible('button[data-elm-id="btnDeletePhotos"', 50000)
+      .pause(5000)
+      .click('button[data-elm-id="btnAssignPhotos"]')
+      .pause(5000)
       .click('div[class="img-content"]')
-      .pause(1000)
+      .pause(5000)
       .click('button[data-elm-id="btnTakeAction"]')
-      .pause(1000)
+      .pause(5000)
       .click('div[class="btr bt-star icon"]')
       .click('button[data-elm-id="btnSaveAndPreview"]')
       .pause(5000)
@@ -168,8 +178,8 @@
     browser
       .waitForElementVisible('body', 500000)
       //filling listing price
-      .waitForElementVisible('data-elm-id="btnActivateListingXs"', 500000)
-      .click('data-elm-id="btnActivateListingXs"')
+      .waitForElementVisible('button[data-elm-id="btnActivateListingXs"]', 500000)
+      .click('button[data-elm-id="btnActivateListingXs"]')
       .pause(1000)
     
   },
@@ -177,8 +187,8 @@
     browser
       .waitForElementVisible('body', 500000)
       //filling listing price
-      .waitForElementVisible('data-elm-id="btnAgreeContinue"', 500000)
-      .click('data-elm-id="btnAgreeContinue"')
+      .waitForElementVisible('button[data-elm-id="btnAgreeContinue"]', 500000)
+      .click('button[data-elm-id="btnAgreeContinue"]')
       .pause(1000)
       //.assert.containsText('ng-class="config.title")
       .end()
