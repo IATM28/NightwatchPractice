@@ -5,6 +5,7 @@
     "custom_assertions_path": "",
     "page_objects_path": "",
     "globals_path": "globals.js",
+   
 
     "selenium": {
         "start_process": true,
@@ -28,10 +29,8 @@
             "silent": true,
             "screenshots": {
                 "enabled": true,
-                "on_failure": true,
-                "on_error": true,
-                "path": "tests_output/screenshots", 
-                "skip_testcases_on_fail": true
+                "path": "tests_output/screenshots"
+             
             },
             "desiredCapabilities": {
                 "browserName": "chrome",
