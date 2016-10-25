@@ -9,7 +9,7 @@ module.exports = {
       
 	  browser.maximizeWindow()
 	  browser.waitForElementVisible('body',1000)
-	  browser.pause(120000)
+	  browser.pause(50000)
 	  browser.waitForElementPresent('input[data-elm-id="userEmail"]',100000)
 	  browser.waitForElementPresent('input[data-elm-id="userPassword"]',100000)
 	  browser.waitForElementPresent('button[data-elm-id="btnLogin"]',100000)
@@ -31,7 +31,7 @@ module.exports = {
 	  browser.url('https://dedev.channelauction.com/homes/list-a-home/search')
 	  browser.waitForElementPresent('input[name="address"]',50000)
 	  browser.waitForElementPresent('button[class="btn btn-primary locate-property-btn"]',50000)
-	  browser.setValue('input[name="address"]','4860 Retriever Cir, Anchorage, AK 99502')
+	  browser.setValue('input[name="address"]','4861 Retriever Cir, Anchorage, AK 99502')
 	  browser.click('button[class="btn btn-primary locate-property-btn"]')
 	  browser.pause(50000)
 	  browser.keys(['\uE006'])
@@ -163,5 +163,14 @@ module.exports = {
 	  browser.waitForElementPresent('button[data-elm-id="btnAgreeContinue"]',10000)
 	  browser.click('button[data-elm-id="btnAgreeContinue"]')
 	  //Finish marketing Controls
+	  //Start verification
+	  browser.pause(50000)
+	  browser.waitForElementPresent('h2[class="address-lg m0 ng-binding"]',50000)
+	  browser.waitForElementPresent('div[class="pull-right text-bold"]',50000)
+	  browser.waitForElementPresent('p[class="text-md"]',50000)
+	  browser.assert.containsText('h2[class="address-lg m0 ng-binding"]',"4861 Retriever Cir Anchorage AK 99502")
+	  browser.assert.containsText('div[class="pull-right text-bold"]',"IN PROGRESS ")
+	  browser.assert.containsText('p[class="text-md"]',"Congratulations on completing your listing! One of our Ten-X experts will contact you shortly to activate your listing. If you have any questions in the meantime, please call us at (866) 910-8369.")
+	  //Finish verification
 	  }
 };
