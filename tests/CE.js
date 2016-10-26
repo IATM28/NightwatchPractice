@@ -2,6 +2,9 @@
 var line1;
 var zipCode;
 var city;
+var county;
+var state;
+var address2;
 
 module.exports = {
  
@@ -39,6 +42,7 @@ module.exports = {
 	        browser.setValue('input[ng-model="loginCtrl.password"]', 'jose')
 	        browser.click('button[data-elm-id="btnLogin"]')
 	        browser.waitForElementVisible('body', 10000)
+	        .pause(10000)
 		    browser.waitForElementVisible('a[data-elm-id="lnkCasAdministration"]', 120000)
 		    browser.click('a[data-elm-id="lnkCasAdministration"]')
     		browser.waitForElementVisible('a[data-elm-id="lnkCasAdministration"]', 1000)
@@ -55,12 +59,18 @@ module.exports = {
 			browser.assert.containsText('input[ng-model="model.propertyAddress.city"]',"")
 			city = browser.getText ('input[ng-model="model.propertyAddress.city"]')
 			console.log (city)
-	  		browser.assert.containsText('input[ng-model="model.propertyAddress.county"]',"")
+			browser.assert.containsText('input[ng-model="model.propertyAddress.county"]',"")
+			county = browser.getText ('input[ng-model="model.propertyAddress.county"]')
+			console.log (county)
 	  		browser.assert.containsText('select[id="state"]',"")
+	  		state = browser.getText ('select[id="state"]')
+			console.log (state)
+			address2 = line1.concat(city,state,zipCode)
+			console.log(address2)
 	  		browser.waitForElementVisible('button[class="btn btn-primary btn-lg pull-right"]', 30000000)
 	  		browser.pause(30000)
 	  		browser.click('button[class="btn btn-primary btn-lg pull-right"]')
-  			browser.waitForElementVisible('div[class="panel-heading clearfix pb0"]', 500000).assert.containsText('div[class="panel-heading clearfix pb0"]', '365 N Jefferson st, Chicago, IL 60661')	  
+  			browser.waitForElementVisible('div[class="panel-heading clearfix pb0"]', 500000).assert.containsText('div[class="panel-heading clearfix pb0"]', address2)	  
 		})
 
 	}
