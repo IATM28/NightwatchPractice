@@ -1,4 +1,6 @@
+ //sjAddress = '49 S Lamar St Lakewood CO 80226'
  module.exports = {
+  
 'clicking login de' : function (browser) {
     browser
       .maximizeWindow()
@@ -38,10 +40,11 @@
       .useCss()
       //filling address
       .waitForElementVisible('input[name="address"', 500000)
-      .setValue('input[name="address"', '71 S Lamar St Lakewood CO 80226')
+      //console.log(sjAddress)
+      .setValue('input[name="address"', '46 S Lamar St Lakewood CO 80226')
       .pause(5000)
       .waitForElementVisible('button[ng-click="locatePropCtrl.createProperty()"]', 500000)
-      .click('a[class="ng-binding ng-scope"]')
+      //.click('a[class="ng-binding ng-scope"]')
       .keys('\uE006')
       .pause(5000)
       .click('button[ng-click="locatePropCtrl.createProperty()"]')
@@ -177,10 +180,11 @@
   'sj_preview' : function (browser){
     browser
       .waitForElementVisible('body', 500000)
+      .pause(5000)
       //filling listing price
       .waitForElementVisible('button[data-elm-id="btnActivateListingXs"]', 500000)
       .click('button[data-elm-id="btnActivateListingXs"]')
-      .pause(1000)
+      .pause(5000)
     
   },
   'sj_activate_listing' : function (browser){
@@ -189,8 +193,9 @@
       //filling listing price
       .waitForElementVisible('button[data-elm-id="btnAgreeContinue"]', 500000)
       .click('button[data-elm-id="btnAgreeContinue"]')
-      .pause(1000)
-      //.assert.containsText('ng-class="config.title")
+      .pause(10000)
+      //console.log(sjAddress)
+      .assert.containsText('div[ng-if="activityDashboard.homesListedData.length > 0"]', '46 S Lamar St Lakewood CO 80226')
       .end()
   },
 
