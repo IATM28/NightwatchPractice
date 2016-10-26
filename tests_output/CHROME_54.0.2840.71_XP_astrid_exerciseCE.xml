@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="4">
+
+  <testsuite name="astrid_exerciseCE"
+    errors="0" failures="1" hostname="" id="" package="astrid_exerciseCE" skipped="0"
+    tests="4" time="32.78" timestamp="Wed, 26 Oct 2016 20:08:18 GMT">
+  
+    <testcase name="Step 1: CE Login" time="8.949" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Step 2: Browse to new property file" time="8.382" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 3: Basic info and create property" time="8.749" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 4: Verify property creation" time="6.703" assertions="5">
+
+    
+
+    
+
+    
+
+      <failure message="Testing if element &lt;div.glbl-no-wrap&gt; contains text: &quot;1133 Fairways, Lebanon, TN 37087&quot;.">    at Object.&lt;anonymous&gt; (C:\Users\Astrid\Documents\NightwatchPractice\tests\astrid_exerciseCE.js:47:29)</failure>
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

@@ -1,3 +1,5 @@
+var propertyAddress = '5491 W 10th Ct Hialeah FL 33012';
+
 module.exports = {
   'Step 1: Login DE and verify redirection' : function (browser) {
     browser
@@ -21,8 +23,7 @@ module.exports = {
       .click('//*[@id="main-navbar"]/nav[2]/div/ul[2]/li[2]/ul/li[1]/a')
       .useCss()
       .waitForElementVisible('input[name="address"]', 2000)
-      //The following address has to be changed everytime the test is going to run
-      .setValue('input[name="address"]', '10170 E Cortez Dr Scottsdale, AZ 85260')
+      .setValue('input[name="address"]', propertyAddress)
       .pause(5000)
       
 // TODO: Use option in the RealtyTrack dropdown
@@ -77,7 +78,13 @@ module.exports = {
       .waitForElementVisible('button[data-elm-id="btnAgreeContinue"]', 2000)
       .click('button[data-elm-id="btnAgreeContinue"]')
       .pause(3000)
-      .assert.urlEquals('https://deqa.channelauction.com/homes/dashboard/activity')
-      .end();
+      .assert.urlEquals('https://deqa.channelauction.com/homes/dashboard/activity');
+ },
+ 
+ 'Step 5: Verify property creation' : function (browser){
+     browser
+        .waitForElementVisible('h2.address-lg.m0', 3000)
+        .assert.containsText('div[ng-if="activityDashboard.homesListedData.length > 0"]', propertyAddress)
+        .end();
   }
 };

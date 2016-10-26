@@ -30,10 +30,25 @@ module.exports = {
             .pause(2000)
             .waitForElementVisible('button[data-elm-id="btnCreate"]', 2000)
             .click('button[data-elm-id="btnCreate"]')
-            .waitForElementVisible('li[heading="Marketing Controls"]', 5000)
-            .end();
+            .waitForElementVisible('li[heading="Marketing Controls"]', 5000);
+    },
+    
+    'Step 4: Verify property creation' : function (browser){
+        browser
+            .waitForElementVisible('h4.pull-left.mt-sm', 2000)
+            .getText('h4.pull-left.mt-sm', function(result) {
+                var propertyName = result.value;
+                this.waitForElementVisible('a[data-elm-id="lnkCasFiles"]', 3000)
+                    .click('a[data-elm-id="lnkCasFiles"]')
+                    .waitForElementVisible('input[data-elm-id="searchAddress"]', 3000)
+                    .setValue('input[data-elm-id="searchAddress"]', propertyName)
+                    .pause(1000)
+                    .waitForElementVisible('div.glbl-no-wrap', 3000)
+                    .assert.containsText('div.glbl-no-wrap', propertyName)
+                    .end();
+            });
     }
-}
+};
 
 /*
  * This is a possible step 4, still not fully functional
