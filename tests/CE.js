@@ -5,6 +5,7 @@ var city;
 var county;
 var state;
 var address2;
+var stateAb;
 
 module.exports = {
  
@@ -30,12 +31,12 @@ module.exports = {
 			fullZipCode = address[3].split("-");
 			zipCode = fullZipCode[0];
 			console.log (zipCode);
-			})
+		})
 
 		//Convert Address in sync
 		.perform(function(){
 			console.log('Line 1: ', line1);
-			console.log('zipCode ', zipCode);
+			//console.log('zipCode ', zipCode);
 			browser.url('https://cedev.channelauction.com/login')
 			browser.waitForElementVisible('body', 10000)
     		browser.setValue('input[ng-model="loginCtrl.logonName"]', 'jose')
@@ -57,20 +58,30 @@ module.exports = {
 		 	browser.setValue ('input[ng-model="model.propertyAddress.line1"]', line1)
 			browser.setValue ('input[ng-model="model.propertyAddress.zipCode"]', zipCode)
 			browser.assert.containsText('input[ng-model="model.propertyAddress.city"]',"")
-			city = browser.getText ('input[ng-model="model.propertyAddress.city"]')
-			console.log (city)
 			browser.assert.containsText('input[ng-model="model.propertyAddress.county"]',"")
-			county = browser.getText ('input[ng-model="model.propertyAddress.county"]')
-			console.log (county)
-	  		browser.assert.containsText('select[id="state"]',"")
-	  		state = browser.getText ('select[id="state"]')
-			console.log (state)
-			address2 = line1.concat(city,state,zipCode)
-			console.log(address2)
-	  		browser.waitForElementVisible('button[class="btn btn-primary btn-lg pull-right"]', 30000000)
-	  		browser.pause(30000)
-	  		browser.click('button[class="btn btn-primary btn-lg pull-right"]')
-  			browser.waitForElementVisible('div[class="panel-heading clearfix pb0"]', 500000).assert.containsText('div[class="panel-heading clearfix pb0"]', address2)	  
+			browser.assert.containsText('select[ng-model="model.propertyAddress.state"',"")
+			.pause(2000)
+	  		browser.getValue('select[ng-model="model.propertyAddress.state"]', function (result) {
+	  			state = result.value;
+	  			stateAb = state.split(":")
+	  			console.log("state result: ", stateAb[1]);
+	  			browser.getValue('input[ng-model="model.propertyAddress.city"]', function (result) {
+	  				city = result.value;
+		  			console.log("city result", result);
+		  		
+		  			//console.log('state: ', state);
+	  				//console.log('city: ', city);
+	
+			  		address2 = line1.concat(", ",city,", ",stateAb[1]," ",zipCode)
+					console.log(address2)
+			  		browser.waitForElementVisible('button[class="btn btn-primary btn-lg pull-right"]', 30000000)
+			  		browser.pause(30000)
+			  		browser.click('button[class="btn btn-primary btn-lg pull-right"]')
+  					browser.waitForElementVisible('div[class="panel-heading clearfix pb0"]', 500000).assert.containsText('div[class="panel-heading clearfix pb0"]', address2)	  
+		  		})
+	  		})
+	  		
+	  		
 		})
 
 	}
