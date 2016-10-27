@@ -5,7 +5,7 @@
     "custom_assertions_path": "",
     "page_objects_path": "",
     "globals_path": "globals.js",
-   
+
 
     "selenium": {
         "start_process": true,
@@ -26,11 +26,14 @@
             "launch_url": "http://localhost",
             "selenium_port": 4444,
             "selenium_host": "localhost",
+            "skip_testcases_on_fail": true,
             "silent": true,
             "screenshots": {
                 "enabled": true,
-                "path": "tests_output/screenshots"
-             
+                "on_failure": true,
+                "on_error": false,
+                "path": "./tests_output/screenshots/"
+
             },
             "desiredCapabilities": {
                 "browserName": "chrome",
