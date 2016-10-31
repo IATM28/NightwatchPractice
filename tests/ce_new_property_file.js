@@ -1,6 +1,6 @@
 var enviroment = "https://cedev.channelauction.com";
 var timeforelement = 100000;
-var addressline1 = "022 S 23rd St";
+var addressline1 = "040 S 23rd St";
 var zipcode = 94804;
 var fulladdress = addressline1 + ", Richmond, CA " + zipcode;
 
@@ -48,7 +48,7 @@ module.exports = {
 	  browser.click('option[value="string:traditionalListing"]')
 	  browser.click('select[data-elm-id="isTestProperty"]')
 	  browser.click('option[label="No"]')
-	  browser.pause(240000)
+	  browser.pause(120000)
 	  browser.click('select[data-elm-id="client"]')
 	  browser.pause(10000)
 	  browser.assert.containsText('select[id="client"]',"--")
@@ -65,7 +65,6 @@ module.exports = {
 	  browser.pause(timeforelement)
 	  browser.assert.containsText('select[data-elm-id="dataScreen"]',"Auction Transaction Summary")
 	  browser.assert.containsText('h4[class="pull-left mt-sm ng-binding"]',fulladdress)
-	  //browser.pause(timeforelement)
 	  browser.click('em[class="fa fa-file-o"]')
 	  browser.waitForElementPresent('h3[class="pv-lg clearfix ng-binding ng-scope"]',timeforelement)
 	  browser.waitForElementPresent('label[class="col-md-12 col-lg-4 control-label"]',timeforelement)
@@ -73,9 +72,7 @@ module.exports = {
 	  browser.waitForElementPresent('input[data-elm-id="searchAddress"]',timeforelement)
 	  browser.pause(10000)
 	  browser.clearValue('input[data-elm-id="searchAddress"]')
-	  //browser.setValue('input[data-elm-id="searchAddress"]',addressline1)
 	  browser.setValue('input[data-elm-id="searchAddress"]',addressline1)
-	  //browser.pause(10000)
 	  browser.pause(timeforelement)
 	  browser.waitForElementPresent('div[class="glbl-no-wrap ng-binding"]',timeforelement)
 	  browser.waitForElementPresent('td[class="ng-binding"]',timeforelement)
@@ -91,13 +88,11 @@ module.exports = {
 	  browser.waitForElementPresent('a[class="ng-binding"]',timeforelement)
 	  browser.waitForElementPresent('fieldset[id="amenities"]',timeforelement)
 	  browser.waitForElementPresent('button[data-elm-id="btnSaveAll"]',timeforelement)
-	  browser.pause(timeforelement)
 	  browser.assert.containsText('select[data-elm-id="dataScreen"]',"Auction Transaction Summary")
 	  browser.assert.containsText('h4[class="pull-left mt-sm ng-binding"]',fulladdress)
 	  browser.assert.containsText('label[class="control-label pr-sm"]',"Publish")
   },
  'Publish Property' : function(browser){
-	 //browser.pause(timeforelement)
 	 browser.click('li[heading="Marketing Controls"]')
 	 browser.waitForElementPresent('fieldset[id="listingTypes"]',timeforelement)
 	 browser.waitForElementPresent('fieldset[id="publishHistory"]',timeforelement)
@@ -107,19 +102,19 @@ module.exports = {
 	 browser.pause(timeforelement)
 	 browser.click('button[data-elm-id="btnAddNewEvent"]')
 	 browser.click('button[data-elm-id="btnAddNewEvent"]')
-	 browser.pause(timeforelement)
+	 browser.pause(15000)
 	 browser.waitForElementPresent('div[class="pv mb-lg"]',timeforelement)
 	 browser.waitForElementPresent('button[data-elm-id="btnCancel"',timeforelement)
 	 browser.waitForElementPresent('button[data-elm-id="btnSave"',timeforelement)
 	 browser.waitForElementPresent('div[ng-hide="loadingListingHistory"]',timeforelement)
 	 browser.click('input[ng-model="listingChoice"]')
-	 browser.pause(timeforelement)
+	 browser.pause(20000)
 	 browser.waitForElementPresent('div[ng-show="asset.isListing"]',timeforelement)
 	 browser.waitForElementPresent('input[ng-model="listingType"]',timeforelement)
 	 browser.click('input[value="traditional"]')
 	 browser.click('span[class="mr-lg"]')
 	 browser.click('input[ng-model="listingType"]')
-	 browser.pause(timeforelement)
+	 browser.pause(20000)
 	 browser.waitForElementPresent('input[data-elm-id="startDateTraditional"]',timeforelement)
 	 browser.waitForElementPresent('input[data-elm-id="endDateTraditional"]',timeforelement)
 	 browser.waitForElementPresent('input[id="listPrice"]',timeforelement)
@@ -132,7 +127,7 @@ module.exports = {
 	 browser.setValue('input[data-elm-id="prepTimeTraditional"]',"10")
 	 browser.assert.elementPresent('button[data-elm-id="btnSave"]')
 	 browser.click('button[data-elm-id="btnSave"]')
-	 browser.pause(timeforelement)
+	 browser.pause(10000)
 	 browser.click('label[class="switch switch-lg"]')
 	 browser.waitForElementPresent('div[class="sweet-alert showSweetAlert visible"]',timeforelement)
 	 browser.waitForElementPresent('button[class="cancel"]',timeforelement)
@@ -140,22 +135,24 @@ module.exports = {
 	 browser.click('button[class="confirm"]')
 	 browser.click('button[class="confirm"]')
 	 browser.pause(timeforelement)
+	 browser.waitForElementPresent('a[data-elm-id="btnIsPublished"]',timeforelement)
+	 browser.assert.containsText('a[data-elm-id="btnIsPublished"]',"View this property online")
 	 browser.refresh()
-	 browser.waitForElementPresent('button[data-elm-id="btnIsPublished"]',timeforelement)
-	 browser.click('button[data-elm-id="btnIsPublished"]')
 	 browser.pause(timeforelement)
+	 browser.click('a[data-elm-id="btnIsPublished"]')
 	 //This function works to switch tabs
 	 browser.window_handles(function(result){
 		var handle = result.value[2];
 		browser.switchWindow(handle);
      });
-	 browser.waitForElementPresent('button[ng-click="abCtrl.maoButtonClick()"]',timeforelement)
+	 browser.pause(timeforelement)
+	 browser.refresh()
+	 //browser.pause(10000)
+	 //browser.refresh()
+	 browser.pause(timeforelement)
 	 browser.waitForElementPresent('h1[class="line1 ng-binding"]',timeforelement)
 	 browser.assert.containsText('h1[class="line1 ng-binding"]',addressline1)
-	 browser.pause(timeforelement)
+	 browser.waitForElementPresent('button[ng-click="abCtrl.maoButtonClick()"]',timeforelement)
 	 browser.end();
  } 
-      //browser.click('label[class="switch switch-lg"]')
-	  //browser.pause(timeforelement)
-	  //browser.end();
 };
