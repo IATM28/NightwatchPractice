@@ -4,28 +4,15 @@
             tests="4">
 
   <testsuite name="astrid_exerciseCE"
-    errors="0" failures="1" hostname="" id="" package="astrid_exerciseCE" skipped="0"
-    tests="4" time="32.78" timestamp="Wed, 26 Oct 2016 20:08:18 GMT">
+    errors="0" failures="1" hostname="" id="" package="astrid_exerciseCE" skipped="1"
+    tests="4" time="35.40" timestamp="Tue, 01 Nov 2016 22:04:01 GMT">
   
-    <testcase name="Step 1: CE Login" time="8.949" assertions="1">
+    <testcase name="Step 1: CE Login" time="13.89" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Step 2: Browse to new property file" time="8.382" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Step 3: Basic info and create property" time="8.749" assertions="5">
-
-    
-
-    
+    <testcase name="Step 2: Browse to new property file" time="10.32" assertions="3">
 
     
 
@@ -34,19 +21,18 @@
     
     </testcase>
   
-    <testcase name="Step 4: Verify property creation" time="6.703" assertions="5">
-
-    
-
-    
-
-    
-
-      <failure message="Testing if element &lt;div.glbl-no-wrap&gt; contains text: &quot;1133 Fairways, Lebanon, TN 37087&quot;.">    at Object.&lt;anonymous&gt; (C:\Users\Astrid\Documents\NightwatchPractice\tests\astrid_exerciseCE.js:47:29)</failure>
+    <testcase name="Step 3: Basic info and create property" time="11.19" assertions="1">  <failure message="Timed out while waiting for element &lt;option[value=&quot;string:8bd47bce-72a1-4f0f-ae1b-796ed6992e84&quot;]&gt; to be present for 10000 milliseconds.">    at Object.module.exports.Step 3: Basic info and create property (C:\Users\Astrid\Documents\NightwatchPractice\tests\astrid_exerciseCE.js:23:14)</failure>
 
     
     </testcase>
   
+  
+    
+    <testcase
+      name="Step 4: Setting basic event information and publish">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>

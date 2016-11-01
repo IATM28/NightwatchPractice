@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="5">
+            tests="6">
 
   <testsuite name="astrid_exerciseDE"
     errors="0" failures="0" hostname="" id="" package="astrid_exerciseDE" skipped="0"
-    tests="5" time="58.56" timestamp="Wed, 26 Oct 2016 20:48:01 GMT">
+    tests="6" time="78.74" timestamp="Tue, 01 Nov 2016 21:39:24 GMT">
   
-    <testcase name="Step 1: Login DE and verify redirection" time="22.42" assertions="4">
+    <testcase name="Step 1: DE Login" time="22.03" assertions="4">
 
     
 
@@ -18,34 +18,7 @@
     
     </testcase>
   
-    <testcase name="Step 2: Browse to List a Home and search address" time="7.332" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Step 3: Go through the SJ steps" time="15.79" assertions="13">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="Step 2: Browse to List a Home and search address" time="8.634" assertions="4">
 
     
 
@@ -56,7 +29,25 @@
     
     </testcase>
   
-    <testcase name="Step 4: Preview property and Marketing Agreement" time="11.91" assertions="4">
+    <testcase name="Step 3: Go through the SJ steps" time="14.90" assertions="13">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -67,7 +58,39 @@
     
     </testcase>
   
-    <testcase name="Step 5: Verify property creation" time="1.111" assertions="2">
+    <testcase name="Step 4: Preview property and Marketing Agreement" time="11.58" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 5: Verify property creation" time="0.1910" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Step 6: Publish property" time="21.40" assertions="9">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
