@@ -13,7 +13,11 @@ var variables = {
     amount: '350000',
     image: '\\home.jpg',
     userce: "jose",
-    passwordce: "jose"
+    passwordce: "jose",
+    sdate:"10/01/2016",
+    edate:"12/01/2016"
+
+
 }
 
 module.exports = {

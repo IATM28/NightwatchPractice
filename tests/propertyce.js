@@ -1,54 +1,19 @@
+var address = require('./address.js');
+var login = require('./login.js');
+
 module.exports = {
 
 
     'Step 0: Look For valid Addresss': function(browser) {
-
-        var data = browser.globals.variables;
-        var zip = data.zipcodes[Math.floor(Math.random() * (8 + 1))];
-        var str;
-        var dir;
-
-        browser
-            .url('http://www.fakeaddressgenerator.com/US_Real_Random_Address/index')
-            .waitForElementVisible('body', 1000)
-            .setValue('input[name="zip"]', zip)
-            .pause(1000)
-            .click('input[type="submit"]')
-            .pause(1000)
-            .getText('ul li:nth-child(' + Math.floor(Math.random() * (5 + 1) + 1) + ') p:nth-child(3)', function(result) {
-                data.zip = zip;
-                console.log('Zipcode to Use: ' + data.zip);
-                str = (JSON.stringify(result.value));
-                dir = str.substring(8, str.indexOf(","));
-                data.dir = dir.replace('"', '');
-                console.log('Address to use: ' + data.dir);
-            })
+        address.ceAddress(browser);
     },
 
-    'Step 1: Login': function(browser) {
-
-        var data = browser.globals.variables;
-        var num = 1;
-        var option = 'Login';
-        var step = "1.- ";
-        var path = data.pathce + step + option;
 
 
-        browser
-            .windowMaximize()
-            .url('https://cedev.channelauction.com/login')
-            .waitForElementVisible('body', 1000)
-            .assert.containsText('body', 'SIGN IN TO CONTINUE.')
-            .setValue('input[name="logonName"]', data.userce)
-            .setValue('input[name="password"]', data.passwordce)
-            .saveScreenshot(path + num + data.ext)
-            .click('button[data-elm-id="btnLogin"]')
-            .waitForElementVisible('a[data-elm-id="lnkCasAdministration"]', 20000)
-        browser.expect.element('div.content-wrapper').text.to.contain('Dashboard')
-        browser
-            .saveScreenshot(path + (num += 1) + data.ext)
-            .pause(4000)
+    'Step 1: CE Login': function(browser) {
+        login.ceLogin(browser);
     },
+
 
     'Step 2: Select option to create New listing': function(browser) {
 

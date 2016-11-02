@@ -1,107 +1,312 @@
-17:12:32.780 INFO - Launching a standalone Selenium Server
-17:12:32.859 INFO - Java: Oracle Corporation 25.101-b13
-17:12:32.859 INFO - OS: Windows 10 10.0 amd64
-17:12:32.870 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
-17:12:32.923 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-17:12:32.924 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-17:12:32.931 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+17:39:09.197 INFO - Launching a standalone Selenium Server
+17:39:09.328 INFO - Java: Oracle Corporation 25.111-b14
+17:39:09.328 INFO - OS: Windows 10 10.0 amd64
+17:39:09.344 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+17:39:09.397 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+17:39:09.397 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+17:39:09.413 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
 registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
-17:12:32.932 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
-17:12:32.932 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
-17:12:33.030 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-17:12:33.030 INFO - Selenium Server is up and running
-17:12:33.308 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Examplede, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
-17:12:33.317 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Examplede, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf) on port 42904
+17:39:09.413 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+17:39:09.413 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+17:39:09.592 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+17:39:09.592 INFO - Selenium Server is up and running
+17:39:09.959 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Cepublish, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+17:39:09.959 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Cepublish, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf) on port 36134
 Only local connections are allowed.
-17:12:35.925 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Examplede, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
-17:12:35.939 INFO - Executing: [get: https://deqa.channelauction.com/homes/])
-17:13:11.097 INFO - Done: [get: https://deqa.channelauction.com/homes/]
-17:13:11.108 INFO - Executing: [find elements: By.cssSelector: body])
-17:13:11.144 INFO - Done: [find elements: By.cssSelector: body]
-17:13:11.150 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
-17:13:11.168 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
-17:13:11.168 INFO - Executing: [find element: By.cssSelector: #main-navbar li a.btn.btn-nav-outline])
-17:13:11.184 INFO - Done: [find element: By.cssSelector: #main-navbar li a.btn.btn-nav-outline]
-17:13:11.199 INFO - Executing: [click: 1 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: #main-navbar li a.btn.btn-nav-outline]])
-17:13:11.656 INFO - Done: [click: 1 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: #main-navbar li a.btn.btn-nav-outline]]
-17:13:11.662 INFO - Executing: [take screenshot])
-17:13:13.103 INFO - Done: [take screenshot]
-17:13:13.134 INFO - Executing: [find element: By.cssSelector: body])
-17:13:13.156 INFO - Done: [find element: By.cssSelector: body]
-17:13:13.156 INFO - Executing: [get text: 0 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
-17:13:13.203 INFO - Done: [get text: 0 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
-17:13:13.218 INFO - Executing: [find element: By.cssSelector: input[id="userEmail"]])
-17:13:13.234 INFO - Done: [find element: By.cssSelector: input[id="userEmail"]]
-17:13:13.234 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[id="userEmail"]], [e, l, o, p, e, z, @, m, a, h, i, s, o, f, t, ., c, o, m]])
-17:13:13.348 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[id="userEmail"]], [e, l, o, p, e, z, @, m, a, h, i, s, o, f, t, ., c, o, m]]
-17:13:13.354 INFO - Executing: [find element: By.cssSelector: input[id="userPassword"]])
-17:13:13.399 INFO - Done: [find element: By.cssSelector: input[id="userPassword"]]
-17:13:13.406 INFO - Executing: [send keys: 3 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[id="userPassword"]], [1, 2, 3, 4, 5, 6]])
-17:13:13.495 INFO - Done: [send keys: 3 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[id="userPassword"]], [1, 2, 3, 4, 5, 6]]
-17:13:13.500 INFO - Executing: [take screenshot])
-17:13:14.296 INFO - Done: [take screenshot]
-17:13:14.374 INFO - Executing: [find element: By.cssSelector: button[data-elm-id="btnLogin"]])
-17:13:14.441 INFO - Done: [find element: By.cssSelector: button[data-elm-id="btnLogin"]]
-17:13:14.447 INFO - Executing: [click: 4 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: button[data-elm-id="btnLogin"]]])
-17:13:14.576 INFO - Done: [click: 4 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: button[data-elm-id="btnLogin"]]]
-17:13:14.606 INFO - Executing: [find elements: By.cssSelector: .mb-lg:nth-of-type(1)])
-17:13:14.700 INFO - Done: [find elements: By.cssSelector: .mb-lg:nth-of-type(1)]
-17:13:14.715 INFO - Executing: [is displayed: 5 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: .mb-lg:nth-of-type(1)]])
-17:13:14.850 INFO - Done: [is displayed: 5 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: .mb-lg:nth-of-type(1)]]
-17:13:17.861 INFO - Executing: [take screenshot])
-17:13:26.224 INFO - Done: [take screenshot]
-17:13:26.270 INFO - Executing: [find element: By.cssSelector: .mb-lg])
-17:13:26.316 INFO - Done: [find element: By.cssSelector: .mb-lg]
-17:13:26.320 INFO - Executing: [get text: 6 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: .mb-lg]])
-17:13:26.362 INFO - Done: [get text: 6 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: .mb-lg]]
-17:13:26.385 INFO - Executing: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) a.dropdown-title])
-17:13:26.418 INFO - Done: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) a.dropdown-title]
-17:13:26.418 INFO - Executing: [click: 7 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) a.dropdown-title]])
-17:13:26.531 INFO - Done: [click: 7 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) a.dropdown-title]]
-17:13:26.541 INFO - Executing: [find elements: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu])
-17:13:26.577 INFO - Done: [find elements: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu]
-17:13:26.577 INFO - Executing: [is displayed: 8 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu]])
-17:13:26.609 INFO - Done: [is displayed: 8 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu]]
-17:13:26.624 INFO - Executing: [take screenshot])
-17:13:27.341 INFO - Done: [take screenshot]
-17:13:27.409 INFO - Executing: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a])
-17:13:27.463 INFO - Done: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]
-17:13:27.463 INFO - Executing: [get text: 9 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]])
-17:13:27.510 INFO - Done: [get text: 9 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]]
-17:13:27.510 INFO - Executing: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a])
-17:13:27.525 INFO - Done: [find element: By.cssSelector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]
-17:13:27.541 INFO - Executing: [click: 9 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]])
-17:13:28.095 INFO - Done: [click: 9 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: ul.nav.navbar-nav.navbar-right li:nth-child(2) .dropdown-menu li:nth-child(1) a]]
-17:13:28.108 INFO - Executing: [take screenshot])
-17:13:28.810 INFO - Done: [take screenshot]
-17:13:28.898 INFO - Executing: [find elements: By.cssSelector: body])
-17:13:28.933 INFO - Done: [find elements: By.cssSelector: body]
-17:13:28.949 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
-17:13:28.980 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
-17:13:28.988 INFO - Executing: [find element: By.cssSelector: body])
-17:13:29.033 INFO - Done: [find element: By.cssSelector: body]
-17:13:29.039 INFO - Executing: [get text: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
-17:13:29.198 INFO - Done: [get text: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
-17:13:29.207 INFO - Executing: [take screenshot])
-17:13:30.236 INFO - Done: [take screenshot]
-17:13:30.360 INFO - Executing: [find element: By.cssSelector: input[name="address"]])
-17:13:30.410 INFO - Done: [find element: By.cssSelector: input[name="address"]]
-17:13:30.422 INFO - Executing: [send keys: 11 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[name="address"]], [9, 2, 4, 6,  , W,  , L, o, n, e,  , C, a, c, t, u, s,  , D, r, ,,  , P, e, o, r, i, a, ,,  , A, Z,  , 8, 5, 3, 8, 2]])
-17:13:30.847 INFO - Done: [send keys: 11 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: input[name="address"]], [9, 2, 4, 6,  , W,  , L, o, n, e,  , C, a, c, t, u, s,  , D, r, ,,  , P, e, o, r, i, a, ,,  , A, Z,  , 8, 5, 3, 8, 2]]
-17:13:32.852 INFO - Executing: [take screenshot])
-17:13:33.523 INFO - Done: [take screenshot]
-17:13:33.807 INFO - Executing: [find element: By.cssSelector: button[btn-whirl="btn-whirl"]])
-17:13:33.854 INFO - Done: [find element: By.cssSelector: button[btn-whirl="btn-whirl"]]
-17:13:33.854 INFO - Executing: [click: 12 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: button[btn-whirl="btn-whirl"]]])
-17:13:33.969 INFO - Done: [click: 12 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: button[btn-whirl="btn-whirl"]]]
-17:13:33.980 INFO - Executing: [find elements: By.cssSelector: body])
-17:13:34.016 INFO - Done: [find elements: By.cssSelector: body]
-17:13:34.025 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
-17:13:34.094 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
-17:13:34.109 INFO - Executing: [find element: By.cssSelector: body])
-17:13:34.160 INFO - Done: [find element: By.cssSelector: body]
-17:13:34.169 INFO - Executing: [get text: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]])
-17:13:34.283 INFO - Done: [get text: 10 [[ChromeDriver: chrome on XP (9434ae22b0c8327aec52f7c2ecc00199)] -> css selector: body]]
-17:13:34.297 INFO - Executing: [delete session: 8094c258-c5c3-4add-9dbc-b6574a548744])
-17:13:35.673 INFO - Done: [delete session: 8094c258-c5c3-4add-9dbc-b6574a548744]
+17:39:12.379 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Cepublish, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+17:39:12.395 INFO - Executing: [maximise window])
+17:39:13.610 INFO - Done: [maximise window]
+17:39:13.610 INFO - Executing: [get: https://cedev.channelauction.com/login])
+17:39:30.783 INFO - Done: [get: https://cedev.channelauction.com/login]
+17:39:30.792 INFO - Executing: [find elements: By.cssSelector: body])
+17:39:30.830 INFO - Done: [find elements: By.cssSelector: body]
+17:39:30.838 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: body]])
+17:39:30.852 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: body]]
+17:39:30.867 INFO - Executing: [find element: By.cssSelector: body])
+17:39:30.883 INFO - Done: [find element: By.cssSelector: body]
+17:39:30.883 INFO - Executing: [get text: 0 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: body]])
+17:39:30.922 INFO - Done: [get text: 0 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: body]]
+17:39:30.922 INFO - Executing: [find element: By.cssSelector: input[name="logonName"]])
+17:39:30.938 INFO - Done: [find element: By.cssSelector: input[name="logonName"]]
+17:39:30.953 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: input[name="logonName"]], [j, o, s, e]])
+17:39:30.999 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: input[name="logonName"]], [j, o, s, e]]
+17:39:31.004 INFO - Executing: [find element: By.cssSelector: input[name="password"]])
+17:39:31.024 INFO - Done: [find element: By.cssSelector: input[name="password"]]
+17:39:31.029 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: input[name="password"]], [j, o, s, e]])
+17:39:31.074 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: input[name="password"]], [j, o, s, e]]
+17:39:31.078 INFO - Executing: [take screenshot])
+17:39:31.223 INFO - Done: [take screenshot]
+17:39:31.234 INFO - Executing: [find element: By.cssSelector: button[data-elm-id="btnLogin"]])
+17:39:31.265 INFO - Done: [find element: By.cssSelector: button[data-elm-id="btnLogin"]]
+17:39:31.270 INFO - Executing: [click: 3 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: button[data-elm-id="btnLogin"]]])
+17:39:31.311 INFO - Done: [click: 3 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: button[data-elm-id="btnLogin"]]]
+17:39:31.319 INFO - Executing: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]])
+17:39:31.338 INFO - Done: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]]
+17:39:31.854 INFO - Executing: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]])
+17:39:31.869 INFO - Done: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]]
+17:39:32.399 INFO - Executing: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]])
+17:39:41.771 INFO - Done: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]]
+17:39:42.281 INFO - Executing: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]])
+17:39:42.314 INFO - Done: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]]
+17:39:42.831 INFO - Executing: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]])
+17:39:42.947 INFO - Done: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]]
+17:39:43.454 INFO - Executing: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]])
+17:39:43.485 INFO - Done: [find elements: By.cssSelector: a[data-elm-id="lnkCasAdministration"]]
+17:39:43.485 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: a[data-elm-id="lnkCasAdministration"]]])
+17:39:43.522 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: a[data-elm-id="lnkCasAdministration"]]]
+17:39:43.522 INFO - Executing: [find elements: By.cssSelector: div.content-wrapper])
+17:39:43.554 INFO - Done: [find elements: By.cssSelector: div.content-wrapper]
+17:39:43.554 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.content-wrapper]])
+17:39:43.643 INFO - Done: [get text: 5 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.content-wrapper]]
+17:39:43.650 INFO - Executing: [take screenshot])
+17:39:43.803 INFO - Done: [take screenshot]
+17:39:47.882 INFO - Executing: [find element: By.cssSelector: a[title="Files"]])
+17:39:47.902 INFO - Done: [find element: By.cssSelector: a[title="Files"]]
+17:39:47.902 INFO - Executing: [click: 6 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: a[title="Files"]]])
+17:39:47.954 INFO - Done: [click: 6 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: a[title="Files"]]]
+17:39:50.959 INFO - Executing: [find elements: By.cssSelector: div.main-view.ng-scope])
+17:39:50.983 INFO - Done: [find elements: By.cssSelector: div.main-view.ng-scope]
+17:39:50.988 INFO - Executing: [is displayed: 7 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.main-view.ng-scope]])
+17:39:51.006 INFO - Done: [is displayed: 7 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.main-view.ng-scope]]
+17:39:51.012 INFO - Executing: [find elements: By.cssSelector: div.main-view.ng-scope])
+17:39:51.024 INFO - Done: [find elements: By.cssSelector: div.main-view.ng-scope]
+17:39:51.028 INFO - Executing: [get text: 7 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.main-view.ng-scope]])
+17:39:51.123 INFO - Done: [get text: 7 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.main-view.ng-scope]]
+17:39:51.128 INFO - Executing: [find element: By.cssSelector: input[data-elm-id="searchAddress"]])
+17:39:51.186 INFO - Done: [find element: By.cssSelector: input[data-elm-id="searchAddress"]]
+17:39:51.191 INFO - Executing: [send keys: 8 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: input[data-elm-id="searchAddress"]], [1, 3, 4, 5,  , E,  , C, o, r, o, n, a, d, o,  , R, d]])
+17:39:51.263 INFO - Done: [send keys: 8 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: input[data-elm-id="searchAddress"]], [1, 3, 4, 5,  , E,  , C, o, r, o, n, a, d, o,  , R, d]]
+17:39:54.276 INFO - Executing: [find elements: By.cssSelector: div.glbl-no-wrap])
+17:39:54.307 INFO - Done: [find elements: By.cssSelector: div.glbl-no-wrap]
+17:39:54.324 INFO - Executing: [is displayed: 9 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.glbl-no-wrap]])
+17:39:54.329 INFO - Done: [is displayed: 9 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.glbl-no-wrap]]
+17:39:54.344 INFO - Executing: [find elements: By.cssSelector: div.glbl-no-wrap])
+17:39:54.360 INFO - Done: [find elements: By.cssSelector: div.glbl-no-wrap]
+17:39:54.360 INFO - Executing: [get text: 9 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.glbl-no-wrap]])
+17:39:54.391 INFO - Done: [get text: 9 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.glbl-no-wrap]]
+17:39:54.391 INFO - Executing: [find element: By.cssSelector: div.glbl-no-wrap:nth-of-type(1)])
+17:39:54.407 INFO - Done: [find element: By.cssSelector: div.glbl-no-wrap:nth-of-type(1)]
+17:39:54.407 INFO - Executing: [click: 9 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.glbl-no-wrap]])
+17:39:54.491 INFO - Done: [click: 9 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.glbl-no-wrap]]
+17:39:54.497 INFO - Executing: [get window handles])
+17:39:54.502 INFO - Done: [get window handles]
+17:39:54.514 INFO - Executing: [switch to window: CDwindow-ff93cfd2-acd7-4d68-b79e-3a1c926b9f59])
+17:39:54.531 INFO - Done: [switch to window: CDwindow-ff93cfd2-acd7-4d68-b79e-3a1c926b9f59]
+17:39:54.538 INFO - Executing: [find elements: By.cssSelector: #fileHeader h4.pull-left])
+17:40:04.158 INFO - Done: [find elements: By.cssSelector: #fileHeader h4.pull-left]
+17:40:04.661 INFO - Executing: [find elements: By.cssSelector: #fileHeader h4.pull-left])
+17:40:04.676 INFO - Done: [find elements: By.cssSelector: #fileHeader h4.pull-left]
+17:40:05.181 INFO - Executing: [find elements: By.cssSelector: #fileHeader h4.pull-left])
+17:40:05.191 INFO - Done: [find elements: By.cssSelector: #fileHeader h4.pull-left]
+17:40:05.695 INFO - Executing: [find elements: By.cssSelector: #fileHeader h4.pull-left])
+17:40:05.708 INFO - Done: [find elements: By.cssSelector: #fileHeader h4.pull-left]
+17:40:05.712 INFO - Executing: [is displayed: 10 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #fileHeader h4.pull-left]])
+17:40:05.729 INFO - Done: [is displayed: 10 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #fileHeader h4.pull-left]]
+17:40:07.735 INFO - Executing: [find element: By.cssSelector: #fileHeader h4.pull-left])
+17:40:07.779 INFO - Done: [find element: By.cssSelector: #fileHeader h4.pull-left]
+17:40:07.783 INFO - Executing: [get text: 10 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #fileHeader h4.pull-left]])
+17:40:07.808 INFO - Done: [get text: 10 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #fileHeader h4.pull-left]]
+17:40:07.812 INFO - Executing: [find element: By.cssSelector: ul li:nth-child(7) a.ng-binding])
+17:40:07.827 INFO - Done: [find element: By.cssSelector: ul li:nth-child(7) a.ng-binding]
+17:40:07.827 INFO - Executing: [click: 11 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: ul li:nth-child(7) a.ng-binding]])
+17:40:07.936 INFO - Done: [click: 11 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: ul li:nth-child(7) a.ng-binding]]
+17:40:07.942 INFO - Executing: [find elements: By.cssSelector: #listingTypes legend.clearfix])
+17:40:08.391 INFO - Done: [find elements: By.cssSelector: #listingTypes legend.clearfix]
+17:40:08.899 INFO - Executing: [find elements: By.cssSelector: #listingTypes legend.clearfix])
+17:40:08.962 INFO - Done: [find elements: By.cssSelector: #listingTypes legend.clearfix]
+17:40:08.966 INFO - Executing: [is displayed: 12 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #listingTypes legend.clearfix]])
+17:40:09.177 INFO - Done: [is displayed: 12 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #listingTypes legend.clearfix]]
+17:40:09.182 INFO - Executing: [find element: By.cssSelector: button[data-elm-id="btnAddNewEvent"]])
+17:40:09.280 INFO - Done: [find element: By.cssSelector: button[data-elm-id="btnAddNewEvent"]]
+17:40:09.284 INFO - Executing: [click: 13 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: button[data-elm-id="btnAddNewEvent"]]])
+17:40:09.816 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (318, 554). Other element would receive the click: <div ng-hide="loadingListingHistory" class="" style="">...</div>
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 103 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'Mililand', ip: '172.30.2.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\Elmi\AppData\Local\Temp\scoped_dir6296_15230}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 20da8240406d1cdaec75ec044d628d47
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:348)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.click(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+17:40:09.816 WARN - Exception: unknown error: Element is not clickable at point (318, 554). Other element would receive the click: <div ng-hide="loadingListingHistory" class="" style="">...</div>
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 103 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'Mililand', ip: '172.30.2.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\Elmi\AppData\Local\Temp\scoped_dir6296_15230}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 20da8240406d1cdaec75ec044d628d47
+17:40:09.850 INFO - Executing: [find elements: By.cssSelector: div.pv.mb-lg])
+17:40:09.866 INFO - Done: [find elements: By.cssSelector: div.pv.mb-lg]
+17:40:09.882 INFO - Executing: [is displayed: 14 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.pv.mb-lg]])
+17:40:09.882 INFO - Done: [is displayed: 14 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.pv.mb-lg]]
+17:40:09.897 INFO - Executing: [find element: By.cssSelector: button[data-elm-id="btnAddNewEvent"]])
+17:40:09.911 INFO - Done: [find element: By.cssSelector: button[data-elm-id="btnAddNewEvent"]]
+17:40:09.914 INFO - Executing: [click: 13 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: button[data-elm-id="btnAddNewEvent"]]])
+17:40:10.220 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (318, 554). Other element would receive the click: <div ng-hide="loadingListingHistory" class="" style="">...</div>
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'Mililand', ip: '172.30.2.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\Elmi\AppData\Local\Temp\scoped_dir6296_15230}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 20da8240406d1cdaec75ec044d628d47
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:348)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.click(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+17:40:10.222 WARN - Exception: unknown error: Element is not clickable at point (318, 554). Other element would receive the click: <div ng-hide="loadingListingHistory" class="" style="">...</div>
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'Mililand', ip: '172.30.2.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\Elmi\AppData\Local\Temp\scoped_dir6296_15230}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 20da8240406d1cdaec75ec044d628d47
+17:40:10.245 INFO - Executing: [find elements: By.cssSelector: div.pv.mb-lg label:nth-of-type(1)])
+17:40:10.312 INFO - Done: [find elements: By.cssSelector: div.pv.mb-lg label:nth-of-type(1)]
+17:40:10.316 INFO - Executing: [is displayed: 15 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.pv.mb-lg label:nth-of-type(1)]])
+17:40:10.359 INFO - Done: [is displayed: 15 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div.pv.mb-lg label:nth-of-type(1)]]
+17:40:10.364 INFO - Executing: [find element: By.cssSelector: label:nth-child(1) input[name="listingType"]])
+17:40:10.412 INFO - Done: [find element: By.cssSelector: label:nth-child(1) input[name="listingType"]]
+17:40:10.415 INFO - Executing: [click: 18 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: label:nth-child(1) input[name="listingType"]]])
+17:40:10.592 INFO - Done: [click: 18 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: label:nth-child(1) input[name="listingType"]]]
+17:40:10.598 INFO - Executing: [find elements: By.cssSelector: div[ng-show="asset.isListing"] span.mr-lg:nth-of-type(1)])
+17:40:10.663 INFO - Done: [find elements: By.cssSelector: div[ng-show="asset.isListing"] span.mr-lg:nth-of-type(1)]
+17:40:10.676 INFO - Executing: [is displayed: 19 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div[ng-show="asset.isListing"] span.mr-lg:nth-of-type(1)]])
+17:40:10.718 INFO - Done: [is displayed: 19 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div[ng-show="asset.isListing"] span.mr-lg:nth-of-type(1)]]
+17:40:10.725 INFO - Executing: [find element: By.cssSelector: span:nth-child(1) input[name="listingListingType"]])
+17:40:10.754 INFO - Done: [find element: By.cssSelector: span:nth-child(1) input[name="listingListingType"]]
+17:40:10.759 INFO - Executing: [click: 20 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: span:nth-child(1) input[name="listingListingType"]]])
+17:40:10.813 INFO - Done: [click: 20 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: span:nth-child(1) input[name="listingListingType"]]]
+17:40:10.817 INFO - Executing: [find elements: By.cssSelector: #startDateTraditional])
+17:40:10.836 INFO - Done: [find elements: By.cssSelector: #startDateTraditional]
+17:40:10.839 INFO - Executing: [is displayed: 21 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #startDateTraditional]])
+17:40:10.854 INFO - Done: [is displayed: 21 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #startDateTraditional]]
+17:40:10.858 INFO - Executing: [find element: By.cssSelector: #startDateTraditional])
+17:40:10.879 INFO - Done: [find element: By.cssSelector: #startDateTraditional]
+17:40:10.883 INFO - Executing: [send keys: 21 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #startDateTraditional], [1, 0, /, 0, 1, /, 2, 0, 1, 6]])
+17:40:10.975 INFO - Done: [send keys: 21 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #startDateTraditional], [1, 0, /, 0, 1, /, 2, 0, 1, 6]]
+17:40:10.979 INFO - Executing: [find element: By.cssSelector: #endDateTraditional])
+17:40:10.998 INFO - Done: [find element: By.cssSelector: #endDateTraditional]
+17:40:11.002 INFO - Executing: [send keys: 22 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #endDateTraditional], [1, 2, /, 0, 1, /, 2, 0, 1, 6]])
+17:40:11.094 INFO - Done: [send keys: 22 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: #endDateTraditional], [1, 2, /, 0, 1, /, 2, 0, 1, 6]]
+17:40:16.099 INFO - Executing: [find element: By.cssSelector: button[data-elm-id="btnSave"]])
+17:40:16.153 INFO - Done: [find element: By.cssSelector: button[data-elm-id="btnSave"]]
+17:40:16.153 INFO - Executing: [click: 23 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: button[data-elm-id="btnSave"]]])
+17:40:16.253 INFO - Done: [click: 23 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: button[data-elm-id="btnSave"]]]
+17:40:16.258 INFO - Executing: [find elements: By.cssSelector: div[ng-class="getClass(notification.status)"]])
+17:40:16.277 INFO - Done: [find elements: By.cssSelector: div[ng-class="getClass(notification.status)"]]
+17:40:16.783 INFO - Executing: [find elements: By.cssSelector: div[ng-class="getClass(notification.status)"]])
+17:40:16.799 INFO - Done: [find elements: By.cssSelector: div[ng-class="getClass(notification.status)"]]
+17:40:16.799 INFO - Executing: [is displayed: 24 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div[ng-class="getClass(notification.status)"]]])
+17:40:16.837 INFO - Done: [is displayed: 24 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: div[ng-class="getClass(notification.status)"]]]
+17:40:21.856 INFO - Executing: [find element: By.cssSelector: input[ng-model="model.isPublished"]])
+17:40:21.887 INFO - Done: [find element: By.cssSelector: input[ng-model="model.isPublished"]]
+17:40:21.887 INFO - Executing: [click: 25 [[ChromeDriver: chrome on XP (20da8240406d1cdaec75ec044d628d47)] -> css selector: input[ng-model="model.isPublished"]]])
+17:40:22.138 WARN - Exception thrown
+org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1167, 265). Other element would receive the click: <span></span>
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'Mililand', ip: '172.30.2.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\Elmi\AppData\Local\Temp\scoped_dir6296_15230}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 20da8240406d1cdaec75ec044d628d47
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:335)
+	at com.sun.proxy.$Proxy2.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:348)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:64)
+	at com.sun.proxy.$Proxy3.click(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:30)
+	at org.openqa.selenium.remote.server.handler.ClickElement.call(ClickElement.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+17:40:22.139 WARN - Exception: unknown error: Element is not clickable at point (1167, 265). Other element would receive the click: <span></span>
+  (Session info: chrome=54.0.2840.71)
+  (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'Mililand', ip: '172.30.2.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\Elmi\AppData\Local\Temp\scoped_dir6296_15230}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 20da8240406d1cdaec75ec044d628d47
