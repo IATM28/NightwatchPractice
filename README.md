@@ -1,2 +1,2 @@
-# examplede
-Exampled file
+# example de and ce
+Examples for nightwatch
