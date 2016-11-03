@@ -31,9 +31,8 @@
             "screenshots": {
                 "enabled": true,
                 "on_failure": true,
-                "on_error": false,
-                "path": "./tests_output/screenshots/"
-
+                "on_error": true,
+                "path": "./tests_output/screenshots"
             },
             "desiredCapabilities": {
                 "browserName": "chrome",

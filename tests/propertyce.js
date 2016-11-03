@@ -5,9 +5,9 @@ module.exports = {
 
 
     'Step 0: Look For valid Addresss': function(browser) {
-        address.ceAddress(browser);
-    },
 
+        address.Address(browser, 'ce');
+    },
 
 
     'Step 1: CE Login': function(browser) {
@@ -51,10 +51,10 @@ module.exports = {
             .click('select#productType')
             .waitForElementPresent('option[value="string:traditionalListing"]', 30000)
             .click('option[value="string:traditionalListing"]')
-            .setValue('input#line1', data.dir)
+            .setValue('input#line1', data.address)
             .setValue('input#zipCode', data.zip)
             .saveScreenshot(path + data.ext)
-            .pause(2000)
+            .pause(3000)
     },
 
 
@@ -68,15 +68,17 @@ module.exports = {
 
 
         browser
-            .pause(2000)
             .click('button[data-elm-id="btnCreate"]')
-            .waitForElementVisible('div#fileHeader', 20000)
+            .waitForElementVisible('div[ng-class="getClass(notification.status)"]', 20000)
+        browser.expect.element('div[ng-class="getClass(notification.status)"]').to.not.be.present.before(20000)
+        browser
             .saveScreenshot(path + num + data.ext)
-            .pause(5000)
+            browser.expect.element('div[ng-class="' + "{'panel-heading-collapsed':fileHeader" + '}"]').text.to.contain(data.address)
+        browser
             .click('a[data-elm-id="lnkCasDashboard"]')
+            .waitForElementVisible('a[ui-sref="page.auctioneer-dashboard"]', 20000)
             .pause(2000)
-            .waitForElementVisible('div.content-wrapper', 20000)
-        browser.expect.element('.list-group').text.to.contain(data.dir)
+        browser.expect.element('.list-group').text.to.contain(data.address)
         browser
             .saveScreenshot(path + (num += 1) + data.ext)
             .end()
