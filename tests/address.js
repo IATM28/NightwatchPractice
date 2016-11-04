@@ -14,7 +14,7 @@ module.exports = {
             .pause(1000)
             .click('input[type="submit"]')
             .pause(1000)
-            .getText('ul li:nth-child(' + Math.floor(Math.random() * (5 + 1) + 1) + ') p:nth-child(4)', function(result) {
+            .getText('ul li:nth-child(' + Math.floor(Math.random() * (5 + 1) + 1) + ') p:nth-child(3)', function(result) {
                 data.zip = zip;
                 console.log('Zipcode to Use: ' + data.zip);
                 if (from === 'ce') {
