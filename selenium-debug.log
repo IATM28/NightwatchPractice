@@ -1,47 +1,75 @@
-18:44:21.320 INFO - Launching a standalone Selenium Server
-18:44:21.442 INFO - Java: Oracle Corporation 25.111-b14
-18:44:21.442 INFO - OS: Windows 10 10.0 amd64
-18:44:21.455 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
-18:44:21.511 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-18:44:21.512 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-18:44:21.521 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+11:16:32.553 INFO - Launching a standalone Selenium Server
+11:16:32.622 INFO - Java: Oracle Corporation 25.101-b13
+11:16:32.622 INFO - OS: Windows 10 10.0 amd64
+11:16:32.637 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+11:16:32.684 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+11:16:32.684 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+11:16:32.705 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
 registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
-18:44:21.522 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
-18:44:21.522 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
-18:44:21.697 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-18:44:21.697 INFO - Selenium Server is up and running
-18:44:22.094 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Propertyde, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
-18:44:22.104 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Propertyde, browserName=chrome, javascriptEnabled=true, platform=ANY}]
-Starting ChromeDriver 2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf) on port 33319
+11:16:32.706 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+11:16:32.706 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+11:16:32.806 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+11:16:32.806 INFO - Selenium Server is up and running
+11:16:33.085 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Propertyde, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+11:16:33.107 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Propertyde, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf) on port 20862
 Only local connections are allowed.
-18:44:24.558 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Propertyde, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
-18:44:24.564 INFO - Executing: [get: http://www.fakeaddressgenerator.com/US_Real_Random_Address/index])
-18:44:30.925 INFO - Done: [get: http://www.fakeaddressgenerator.com/US_Real_Random_Address/index]
-18:44:30.935 INFO - Executing: [find elements: By.cssSelector: body])
-18:44:30.971 INFO - Done: [find elements: By.cssSelector: body]
-18:44:30.978 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on XP (d25d0b48dce63e1d6ab7cdc7fd1b14c4)] -> css selector: body]])
-18:44:31.006 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on XP (d25d0b48dce63e1d6ab7cdc7fd1b14c4)] -> css selector: body]]
-18:44:31.017 INFO - Executing: [find element: By.cssSelector: input[name="zip"]])
-18:44:31.053 INFO - Done: [find element: By.cssSelector: input[name="zip"]]
-18:44:31.060 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on XP (d25d0b48dce63e1d6ab7cdc7fd1b14c4)] -> css selector: input[name="zip"]], [9, 2, 6, 8, 8]])
-18:44:31.142 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on XP (d25d0b48dce63e1d6ab7cdc7fd1b14c4)] -> css selector: input[name="zip"]], [9, 2, 6, 8, 8]]
-18:44:32.149 INFO - Executing: [find element: By.cssSelector: input[type="submit"]])
-18:44:32.170 INFO - Done: [find element: By.cssSelector: input[type="submit"]]
-18:44:32.174 INFO - Executing: [click: 2 [[ChromeDriver: chrome on XP (d25d0b48dce63e1d6ab7cdc7fd1b14c4)] -> css selector: input[type="submit"]]])
-18:44:35.053 INFO - Done: [click: 2 [[ChromeDriver: chrome on XP (d25d0b48dce63e1d6ab7cdc7fd1b14c4)] -> css selector: input[type="submit"]]]
-18:44:36.057 INFO - Executing: [find element: By.cssSelector: ul li:nth-child(2) p:nth-child(4)])
-18:44:36.745 WARN - Exception thrown
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"ul li:nth-child(2) p:nth-child(4)"}
+11:16:35.444 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Propertyde, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+11:16:35.444 INFO - Executing: [get: http://www.fakeaddressgenerator.com/US_Real_Random_Address/index])
+11:16:51.447 INFO - Done: [get: http://www.fakeaddressgenerator.com/US_Real_Random_Address/index]
+11:16:51.456 INFO - Executing: [find elements: By.cssSelector: body])
+11:16:51.490 INFO - Done: [find elements: By.cssSelector: body]
+11:16:51.496 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: body]])
+11:16:51.516 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: body]]
+11:16:51.524 INFO - Executing: [find element: By.cssSelector: input[name="zip"]])
+11:16:51.547 INFO - Done: [find element: By.cssSelector: input[name="zip"]]
+11:16:51.552 INFO - Executing: [send keys: 1 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: input[name="zip"]], [9, 2, 0, 2, 0]])
+11:16:51.602 INFO - Done: [send keys: 1 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: input[name="zip"]], [9, 2, 0, 2, 0]]
+11:16:52.612 INFO - Executing: [find element: By.cssSelector: input[type="submit"]])
+11:16:52.654 INFO - Done: [find element: By.cssSelector: input[type="submit"]]
+11:16:52.658 INFO - Executing: [click: 2 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: input[type="submit"]]])
+11:16:58.606 INFO - Done: [click: 2 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: input[type="submit"]]]
+11:16:59.616 INFO - Executing: [find element: By.cssSelector: ul li:nth-child(6) p:nth-child(3)])
+11:16:59.649 INFO - Done: [find element: By.cssSelector: ul li:nth-child(6) p:nth-child(3)]
+11:16:59.653 INFO - Executing: [get text: 3 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: ul li:nth-child(6) p:nth-child(3)]])
+11:16:59.675 INFO - Done: [get text: 3 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: ul li:nth-child(6) p:nth-child(3)]]
+11:16:59.683 INFO - Executing: [maximise window])
+11:17:00.870 INFO - Done: [maximise window]
+11:17:00.889 INFO - Executing: [get: https://deqa.channelauction.com/homes/list-a-home/search])
+11:17:25.771 INFO - Done: [get: https://deqa.channelauction.com/homes/list-a-home/search]
+11:17:25.782 INFO - Executing: [find elements: By.cssSelector: body])
+11:17:25.859 INFO - Done: [find elements: By.cssSelector: body]
+11:17:25.863 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: body]])
+11:17:25.878 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: body]]
+11:17:25.887 INFO - Executing: [find element: By.cssSelector: .browse-info-box h1])
+11:17:25.906 INFO - Done: [find element: By.cssSelector: .browse-info-box h1]
+11:17:25.911 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: .browse-info-box h1]])
+11:17:25.931 INFO - Done: [get text: 5 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: .browse-info-box h1]]
+11:17:25.941 INFO - Executing: [find elements: By.cssSelector: body])
+11:17:25.950 INFO - Done: [find elements: By.cssSelector: body]
+11:17:25.955 INFO - Executing: [is displayed: 4 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: body]])
+11:17:25.964 INFO - Done: [is displayed: 4 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: body]]
+11:17:25.970 INFO - Executing: [find element: By.cssSelector: input[name="address"]])
+11:17:25.990 INFO - Done: [find element: By.cssSelector: input[name="address"]]
+11:17:25.994 INFO - Executing: [send keys: 6 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: input[name="address"]], [5, 3, 0,  , G, r, a, v, e, s,  , A, v, e,  , #, 1, 0, ,,  , E, l,  , C, a, j, o, n, ,,  , C, A, ,,  , 9, 2, 0, 2, 0]])
+11:17:26.117 INFO - Done: [send keys: 6 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: input[name="address"]], [5, 3, 0,  , G, r, a, v, e, s,  , A, v, e,  , #, 1, 0, ,,  , E, l,  , C, a, j, o, n, ,,  , C, A, ,,  , 9, 2, 0, 2, 0]]
+11:17:33.126 INFO - Executing: [find element: By.cssSelector: button[btn-whirl="btn-whirl"]])
+11:17:48.846 INFO - Done: [find element: By.cssSelector: button[btn-whirl="btn-whirl"]]
+11:17:48.854 INFO - Executing: [click: 7 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: button[btn-whirl="btn-whirl"]]])
+11:17:48.893 INFO - Done: [click: 7 [[ChromeDriver: chrome on XP (dfd2166c39dc9f7b71b214d01714e026)] -> css selector: button[btn-whirl="btn-whirl"]]]
+11:17:51.899 INFO - Executing: [find element: By.cssSelector: .modal-header h1])
+11:17:52.831 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".modal-header h1"}
   (Session info: chrome=54.0.2840.71)
   (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 27 milliseconds
+Command duration or timeout: 47 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'Mililand', ip: '172.30.2.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+System info: host: 'ELMI', ip: '192.168.88.124', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\Elmi\AppData\Local\Temp\scoped_dir8824_5423}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d25d0b48dce63e1d6ab7cdc7fd1b14c4
-*** Element info: {Using=css selector, value=ul li:nth-child(2) p:nth-child(4)}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\elopez\AppData\Local\Temp\scoped_dir4104_21644}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dfd2166c39dc9f7b71b214d01714e026
+*** Element info: {Using=css selector, value=.modal-header h1}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -67,14 +95,17 @@ Session ID: d25d0b48dce63e1d6ab7cdc7fd1b14c4
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-18:44:36.749 WARN - Exception: no such element: Unable to locate element: {"method":"css selector","selector":"ul li:nth-child(2) p:nth-child(4)"}
+11:17:52.831 WARN - Exception: no such element: Unable to locate element: {"method":"css selector","selector":".modal-header h1"}
   (Session info: chrome=54.0.2840.71)
   (Driver info: chromedriver=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 27 milliseconds
+Command duration or timeout: 47 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'Mililand', ip: '172.30.2.93', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+System info: host: 'ELMI', ip: '192.168.88.124', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\Elmi\AppData\Local\Temp\scoped_dir8824_5423}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d25d0b48dce63e1d6ab7cdc7fd1b14c4
-*** Element info: {Using=css selector, value=ul li:nth-child(2) p:nth-child(4)}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.24.417431 (9aea000394714d2fbb20850021f6204f2256b9cf), userDataDir=C:\Users\elopez\AppData\Local\Temp\scoped_dir4104_21644}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.71, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dfd2166c39dc9f7b71b214d01714e026
+*** Element info: {Using=css selector, value=.modal-header h1}
+11:17:52.954 INFO - Executing: [find element: By.cssSelector: .img-responsive])
+11:17:52.977 INFO - Done: [find element: By.cssSelector: .img-responsive]
+11:17:52.985 INFO - Executing: [take screenshot])

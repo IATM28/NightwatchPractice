@@ -23,7 +23,7 @@ var variables = {
     edate: "12/01/2016",
 }
 
-var today = new Date();
+/*var today = new Date();
 var datetime = today.toLocaleString();
 datetime = datetime.replace(/:|\s/g, '');
 datetime = datetime.replace(/['/']/g, '');
@@ -36,9 +36,9 @@ var reporter = new HtmlReporter({
     reportFilename: "generatedTestResults" + datetime + ".html",
     themeName: "default",
     relativeScreenshots: true,
-});
+});*/
 
 module.exports = {
-    reporter: reporter.fn,
+  //  reporter: reporter.fn,
     variables: variables
 }

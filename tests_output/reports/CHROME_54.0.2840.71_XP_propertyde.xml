@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="11">
+
+  <testsuite name="propertyde"
+    errors="1" failures="0" hostname="" id="" package="propertyde" skipped="8"
+    tests="11" time="80.08" timestamp="Fri, 04 Nov 2016 15:16:32 GMT">
+  
+    <testcase name="Step 0: Look For valid Addresss" time="26.77" assertions="1">
+
+    
+    </testcase>
+      <system-err>
+          Error while running [Propertyde / Step 2: Fill List information]:
+
+  ReferenceError: performAsync is not defined
+    at Object.&lt;anonymous&gt; (C:\Users\elopez\NightwatchPractice\tests\propertyde.js:56:21)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\elopez\AppData\Roaming\npm\node_modules\nightwatch\lib\index.js:358:18)
+    at emitTwo (events.js:87:13)
+    at HttpRequest.emit (events.js:172:7)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\elopez\AppData\Roaming\npm\node_modules\nightwatch\lib\index.js:374:15)
+    at emitThree (events.js:97:13)
+    at HttpRequest.emit (events.js:175:7)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\elopez\AppData\Roaming\npm\node_modules\nightwatch\lib\http\request.js:157:16)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+      </system-err>
+  
+    <testcase name="Step 1: Select List a Home" time="26.26" assertions="2">
+
+    
+
+    
+    </testcase>
+      <system-err>
+          Error while running [Propertyde / Step 2: Fill List information]:
+
+  ReferenceError: performAsync is not defined
+    at Object.&lt;anonymous&gt; (C:\Users\elopez\NightwatchPractice\tests\propertyde.js:56:21)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\elopez\AppData\Roaming\npm\node_modules\nightwatch\lib\index.js:358:18)
+    at emitTwo (events.js:87:13)
+    at HttpRequest.emit (events.js:172:7)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\elopez\AppData\Roaming\npm\node_modules\nightwatch\lib\index.js:374:15)
+    at emitThree (events.js:97:13)
+    at HttpRequest.emit (events.js:175:7)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\elopez\AppData\Roaming\npm\node_modules\nightwatch\lib\http\request.js:157:16)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+      </system-err>
+  
+    <testcase name="Step 2: Fill List information" time="27.05" assertions="1">
+<system-out>[[ATTACHMENT|C:\Users\elopez\NightwatchPractice\tests_output\screenshots\propertyde\Step-2:-Fill-List-information_ERROR_Nov-04-2016-111752-GMT-0400-(Venezuela-Standard.png]]</system-out>
+    
+    </testcase>
+      <system-err>
+          Error while running [Propertyde / Step 2: Fill List information]:
+
+  ReferenceError: performAsync is not defined
+    at Object.&lt;anonymous&gt; (C:\Users\elopez\NightwatchPractice\tests\propertyde.js:56:21)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\elopez\AppData\Roaming\npm\node_modules\nightwatch\lib\index.js:358:18)
+    at emitTwo (events.js:87:13)
+    at HttpRequest.emit (events.js:172:7)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\elopez\AppData\Roaming\npm\node_modules\nightwatch\lib\index.js:374:15)
+    at emitThree (events.js:97:13)
+    at HttpRequest.emit (events.js:175:7)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\elopez\AppData\Roaming\npm\node_modules\nightwatch\lib\http\request.js:157:16)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+      </system-err>
+  
+  
+    
+    <testcase
+      name="Step 3: Login">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Step 4: Fill Seller info">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Step 5: Fill Property info">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Step 6: Fill Amenities if they exist">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Step 7: Fill Property Descriptions">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Step 8: Fill Listing Terms">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Step 9: Add Photos">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Step 10: List Home">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

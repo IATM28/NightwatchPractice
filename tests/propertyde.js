@@ -53,14 +53,10 @@ module.exports = {
             .element('css selector', '.img-responsive', function(result) {
                 if (result.value && result.value.ELEMENT) {
                     console.log('Zipcode: ' + data.zip + ' is out of market.');
-                    browser.pause()
-                    performAsync(function(err) {
-                        if (err) {
-                            done(err);
-                        }
-
-                    })
-                }
+                    alert('Zipcode: ' + data.zip + ' is out of market.');
+                    browser.pause();
+                                 }                
+                
             })
         browser
         //.saveScreenshot(path + (num += 1) + data.ext)
